@@ -125,9 +125,9 @@ useEffect(() => {
           <li>
             <Link to={"/clients"}className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Clients</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={"/team"}className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Team</Link>
-          </li>
+          </li> */}
           <li>
             <Link to={"/contact"} className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Contact Us</Link>
           </li>
@@ -136,7 +136,7 @@ useEffect(() => {
       <button className="">
       <AiOutlineMenu onClick={handleNav2} size={35} color='black' className='lg:hidden'/>
       </button>
-      <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Lets talk</button>
+      <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Sign In</button>
       <div className="overlay" data-nav-toggler data-overlay />
     </div>
     <div className={!nav ? 'fixed right-0 top-0 w-[40%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed ease-in-out duration-1000 right-[-100%]'}>

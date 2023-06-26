@@ -18,7 +18,7 @@ const Services = () => {
         {/* Part */}
         <div className='xl:flex grid lg:grid-cols-2 justify-center relative gap-10 pt-20 pb-20 bg-[#f5fffc] p-10'>
                 <h1 className='w-[80%] absolute hidden xl:inline bg-[#28af60] h-3 top-[45%]'> </h1>
-                <Link to={'/'} className='bg-white text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] h-96'>
+                <Link to={'/pricing'} className='bg-white text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] h-96'>
                   <div>
                     <img src={card} alt="" className='mt-5'/>
                   </div>
@@ -26,7 +26,7 @@ const Services = () => {
                   <h2 className='font-bold text-center mt-7 text-white text-3xl'>Website Design</h2>
                   </div>
                 </Link>
-                <Link to={'/'} className='bg-white mt-0 text-center relative shadow-2xl rounded-lg h-96 grid justify-center w-[380px]'>
+                <Link to={'/pricing'} className='bg-white mt-0 text-center relative shadow-2xl rounded-lg h-96 grid justify-center w-[380px]'>
                   <div>
                     <img src={card1} alt="" className='mt-12'/>
                   </div>
@@ -34,7 +34,7 @@ const Services = () => {
                   <h2 className='font-bold  text-center mt-7 text-white text-3xl'>Mobile App</h2>
                   </div>
                 </Link>
-                <Link to={'/'} className='bg-white text-center relative shadow-2xl lg:mt-0 mt-20 rounded-lg h-96 grid justify-center  w-[380px] '>
+                <Link to={'/pricing'} className='bg-white text-center relative shadow-2xl lg:mt-0 mt-20 rounded-lg h-96 grid justify-center  w-[380px] '>
                   <div>
                     <img src={card2} alt="" className='mt-12' />
                   </div>
@@ -42,7 +42,7 @@ const Services = () => {
                   <h2 className='font-bold  text-center mt-7 text-white text-3xl'>Digital Marketing</h2>
                   </div>
                 </Link>
-                <Link to={'/'} className='bg-white mt-0 h-96 text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] '>
+                <Link to={'/pricing'} className='bg-white mt-0 h-96 text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] '>
                   <div>
                     <img src={card3} alt="" className='mt-12'/>
                   </div>
@@ -53,7 +53,7 @@ const Services = () => {
               </div>
         <div className='xl:flex grid lg:grid-cols-2 justify-center relative gap-10 pt-20 pb-20 bg-[#f5fffc] p-10'>
                 <h1 className='w-[80%] absolute hidden xl:inline bg-[#28af60] h-3 top-[45%]'> </h1>
-                <Link to={'/'} className='bg-white text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] h-96'>
+                <Link to={'/pricing'} className='bg-white text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] h-96'>
                   <div>
                     <img src={card} alt="" className='mt-5'/>
                   </div>
@@ -61,7 +61,7 @@ const Services = () => {
                   <h2 className='font-bold text-center mt-7 text-white text-3xl'>Graphic Design</h2>
                   </div>
                 </Link>
-                <Link to={'/'} className='bg-white mt-0 text-center relative shadow-2xl rounded-lg h-96 grid justify-center w-[380px]'>
+                <Link to={'/pricing'} className='bg-white mt-0 text-center relative shadow-2xl rounded-lg h-96 grid justify-center w-[380px]'>
                   <div>
                     <img src={card1} alt="" className='mt-12'/>
                   </div>
@@ -69,7 +69,7 @@ const Services = () => {
                   <h2 className='font-bold  text-center mt-7 text-white text-3xl'>Video Editing</h2>
                   </div>
                 </Link>
-                <Link to={'/'} className='bg-white text-center relative shadow-2xl lg:mt-0 mt-20 rounded-lg h-96 grid justify-center  w-[380px] '>
+                <Link to={'/pricing'} className='bg-white text-center relative shadow-2xl lg:mt-0 mt-20 rounded-lg h-96 grid justify-center  w-[380px] '>
                   <div>
                     <img src={card2} alt="" className='mt-12' />
                   </div>
@@ -77,7 +77,7 @@ const Services = () => {
                   <h2 className='font-bold  text-center mt-7 text-white text-3xl'>Lead Generation</h2>
                   </div>
                 </Link>
-                <Link to={'/'} className='bg-white mt-0 h-96 text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] '>
+                <Link to={'/pricing'} className='bg-white mt-0 h-96 text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] '>
                   <div>
                     <img src={card3} alt="" className='mt-12'/>
                   </div>
