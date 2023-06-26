@@ -182,6 +182,77 @@ export default function Pricing() {
             <div className='flex justify-center gap-16 mt-16'>
             <div className='w-[400px] cursor-pointer bg-gray-100'>
                 <section className='bg-[#28af60] text-white p-5'>
+                <h1 className='font-bold text-6xl'>Video Editing</h1>
+                <h3 className='font-bold'>$100 USD</h3>
+                </section>
+                <ul className='mt-28 text-start p-8'>
+                <li className='flex gap-4'>
+                        <FaPlus  size={20}/>
+                        <a href="/j"> 1 - 1.5 Mins</a>
+                    </li>
+                    <li className='flex gap-4 mt-6'>
+                        <FaPlus size={20}/>
+                        <a href="/j">First Class Effects</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div className='w-[400px] cursor-pointer bg-gray-100'>
+                <section className='bg-[#28af60] text-white p-5'>
+                <h1 className='font-bold text-6xl'>Lead Generation</h1>
+                <h3 className='font-bold'>$100 USD</h3>
+                </section>
+                <ul className='p-8 text-start mt-28'>
+                <li className='flex gap-4'>
+                        <FaPlus  size={20}/>
+                        <a href="/j"> 50 legit lead</a>
+                    </li>
+                    {/* <li className='flex gap-4 mt-6'>
+                        <FaPlus size={20}/>
+                        <a href="/j">Standard Design</a>
+                    </li>
+                    <li className='flex gap-4 mt-6'>
+                        <FaPlus size={20}  />
+                        <a href="/j">  Professional Content</a>
+                    </li> */}
+                </ul>
+            </div>
+            <div className='w-[400px] cursor-pointer bg-gray-100'>
+                <section className='bg-[#28af60] text-white p-5'>
+                <h1 className='font-bold text-6xl'>Mobile App</h1>
+                <h3 className='font-bold'>$1000 - 10,000 USD</h3>
+                </section>
+                <ul className='mt-28 p-8 text-start'>
+                    <li className='flex gap-4'>
+                        <FaPlus size={20}  />
+                        <a href="/j"> Pending On Requirements</a>
+                    </li>
+                    {/* <li className='flex gap-4 mt-6'>
+                        <FaPlus size={20}  />
+                        <a href="/j">45 Fb Timeline Status</a>
+                    </li>
+                    <li className='flex gap-4 mt-6'>
+                        <FaPlus size={20}  />
+                        <a href="/j">5 Groups Creation</a>
+                    </li>
+                    <li className='flex gap-4 mt-6'>
+                        <FaPlus size={20}  />
+                        <a href="/j">5 Groups Creation</a>
+                    </li>
+                    <li className='flex gap-4 mt-6'>
+                        <FaPlus size={20}  />
+                        <a href="/j">5 Groups Creation</a>
+                    </li>
+                    <li className='flex gap-4 mt-6'>
+                        <FaPlus size={20}  />
+                        <a href="/j">5 Groups Creation</a>
+                    </li> */}
+                </ul>
+            </div>
+        </div>
+            <div className='flex justify-center gap-16 mt-16'>
+            <div className='w-[400px] cursor-pointer bg-gray-100'>
+                <section className='bg-[#28af60] text-white p-5'>
                 <h1 className='font-bold text-6xl'>Logo Packages/Logo Redo</h1>
                 <h3 className='font-bold'>$100 USD</h3>
                 </section>
