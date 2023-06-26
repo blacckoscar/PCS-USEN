@@ -120,13 +120,13 @@ useEffect(() => {
             <Link to={"/services"} className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Services</Link>
           </li>
           <li>
-            <Link to={"/"} className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Features</Link>
+            <Link to={"/pricing"} className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Pricing</Link>
           </li>
           <li>
-            <Link to={"/"}className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Blog</Link>
+            <Link to={"/clients"}className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Clients</Link>
           </li>
           <li>
-            <Link to={"/"}className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Career</Link>
+            <Link to={"/team"}className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Team</Link>
           </li>
           <li>
             <Link to={"/contact"} className="navbar-link"  style={{fontWeight: "bolder", fontSize: 20,}}>Contact Us</Link>

@@ -8,6 +8,9 @@ import Footer from './Components/Footer';
 import Contact from './Components/Contact';
 import Services from './Components/Services';
 import SocialLinks from './Components/SocialLinks';
+import Clients from './Components/Clients';
+import Team from './Components/Team';
+import Pricing from './Components/Pricing';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path='/about' element={<About  />} />
           <Route path='/contact' element={<Contact  />} />
           <Route path='/services' element={<Services  />} />
+          <Route path='/clients' element={<Clients  />} />
+          <Route path='/team' element={<Team  />} />
+          <Route path='/pricing' element={<Pricing  />} />
         </Routes>
         <Footer  />
         </>

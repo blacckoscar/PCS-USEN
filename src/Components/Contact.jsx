@@ -12,8 +12,8 @@ const Contact = () => {
             <h1 className='font-bold text-blue-900 text-7xl'>Contact us</h1>
         </div>
         <div className='mt-32 lg:flex bg-no-repeat bg-cover bg-center md:bg-fixed 
-        bg-[url("https://firebasestorage.googleapis.com/v0/b/jobs-hunt-5c088.appspot.com/o/careerform1.jpg?alt=media&token=10b9459d-0992-433f-afdf-32cfc219349f")]
         '>
+                    {/* bg-[url("https://firebasestorage.googleapis.com/v0/b/jobs-hunt-5c088.appspot.com/o/careerform1.jpg?alt=media&token=10b9459d-0992-433f-afdf-32cfc219349f")] */}
             <img src={bg} alt="" className='lg:w-[400px] hidden lg:inline lg:h-[300px] xl:mb-0 mb-24 -mt-28 shadow-2xl drop-shadow-xl ml-32'/>
             <div className='border-[1px] ml-10 border-blue-900 p-2'>
             <div className='2xl:flex gap-10 p-2'>

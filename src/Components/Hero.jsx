@@ -104,13 +104,13 @@ const Hero = () => {
 </p>
                     <div className="btn-group">
                       <a href="/services" className="btn btn-primary">Get Started</a>
-                      <button className="flex-btn">
+                      <Link to={'/services'} className="flex-btn">
                         <div className="btn-icon">
                           {/* <ion-icon name="play" aria-hidden="true" /> */}
                           <AiFillPlayCircle  />
                         </div>
                         <span className="span">How it works</span>
-                      </button>
+                      </Link>
                     </div>
                   </div>
                   <section className="hero-banner has-before img-holder" style={{width: -650, height: -650}}>

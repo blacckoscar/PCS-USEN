@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
     <div className="footer-top section">
       <div className="container">
         <div className="footer-brand">
-          <a href="*" className="logo">PCS USEN</a>
+          <a href="/" className="logo">PCS USEN</a>
           <p className="footer-text">
             Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
           </p>
@@ -22,22 +23,22 @@ const Footer = () => {
             <p className="footer-list-title">Our Services</p>
           </li>
           <li>
-            <a href="*" className="footer-link">Strategy &amp; Research</a>
+            <a href="/" className="footer-link">Strategy &amp; Research</a>
           </li>
           <li>
-            <a href="*" className="footer-link">Web Development</a>
+            <a href="/" className="footer-link">Web Development</a>
           </li>
           <li>
-            <a href="*" className="footer-link">Web Solution</a>
+            <a href="/" className="footer-link">Web Solution</a>
           </li>
           <li>
-            <a href="*" className="footer-link">Digital Merketing</a>
+            <a href="/" className="footer-link">Digital Merketing</a>
           </li>
           <li>
-            <a href="*" className="footer-link">App Design</a>
+            <a href="/" className="footer-link">App Design</a>
           </li>
           <li>
-            <a href="*" className="footer-link">App Development</a>
+            <a href="/" className="footer-link">App Development</a>
           </li>
         </ul>
         <ul className="footer-list">
@@ -45,22 +46,22 @@ const Footer = () => {
             <p className="footer-list-title">Company</p>
           </li>
           <li>
-            <a href="*" className="footer-link">About Company</a>
+            <a href="/" className="footer-link">About Company</a>
           </li>
           <li>
-            <a href="*" className="footer-link">Our Services</a>
+            <a href="/" className="footer-link">Our Services</a>
           </li>
           <li>
-            <a href="*" className="footer-link">Our Portfolio</a>
+            <a href="/" className="footer-link">Our Portfolio</a>
           </li>
           <li>
-            <a href="*" className="footer-link">Our Blog</a>
+            <a href="/" className="footer-link">Our Blog</a>
           </li>
           <li>
-            <a href="*" className="footer-link">Latest News</a>
+            <a href="/" className="footer-link">Latest News</a>
           </li>
           <li>
-            <a href="*" className="footer-link">Contact Us</a>
+            <a href="/" className="footer-link">Contact Us</a>
           </li>
         </ul>
         <ul className="footer-list">
@@ -70,37 +71,39 @@ const Footer = () => {
           <li className="footer-item">
             <ion-icon name="location" aria-hidden="true" />
             <address className="contact-link address">
-              4517 Washington Ave. Manchester, Kentucky 39495
+            324 Main Street 
+Suit 1071
+Laurel MD 20707
             </address>
           </li>
           <li className="footer-item">
             <ion-icon name="call" aria-hidden="true" />
-            <a href="tel:+7894631546876" className="contact-link">+7894631546876</a>
+            <a href="tel:+12407701632" className="contact-link">+12407701632</a>
           </li>
           <li className="footer-item">
             <ion-icon name="mail" aria-hidden="true" />
-            <a href="mailto:info@pcsusen.com" className="contact-link">info@pcs-usen.com</a>
+            <a href="mailto:mozzentagroup@gmail.com" className="contact-link">mozzentagroup@gmail.com</a>
           </li>
           <li className="footer-item">
             <ul className="social-list">
               <li>
-                <a href="*" className="social-link">
-                  <ion-icon name="logo-facebook" />
+                <a href="/" className="social-link">
+                  <FaFacebook name="logo-facebook" />
                 </a>
               </li>
               <li>
-                <a href="*" className="social-link">
-                  <ion-icon name="logo-twitter" />
+                <a href="/" className="social-link">
+                  <FaTwitter name="logo-twitter" />
                 </a>
               </li>
               <li>
-                <a href="*" className="social-link">
-                  <ion-icon name="logo-instagram" />
+                <a href="/" className="social-link">
+                  <FaInstagram name="logo-instagram" />
                 </a>
               </li>
               <li>
-                <a href="*" className="social-link">
-                  <ion-icon name="logo-pinterest" />
+                <a href="/" className="social-link">
+                  <FaPinterest name="logo-pinterest" />
                 </a>
               </li>
             </ul>
