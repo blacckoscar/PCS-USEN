@@ -104,7 +104,7 @@ useEffect(() => {
         <div className="md:hidden">
           <a href="/" className="logo">PCS USEN</a>
           <button className="" >
-            <AiOutlineClose onClick={handleNav2} size={30} color='black' className='ml-96 lg:hidden z-50'/>
+            <AiOutlineClose onClick={handleNav2} size={30} color='black' className='ml-96 lg:hi z-50'/>
           </button>
         </div>
         <ul
@@ -139,7 +139,7 @@ useEffect(() => {
       <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Sign In</button>
       <div className="overlay" data-nav-toggler data-overlay />
     </div>
-    <div className={!nav ? 'fixed right-0 top-0 w-[40%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed ease-in-out duration-1000 right-[-100%]'}>
+    <div className={!nav ? 'fixed right-0 top-0 w-[40%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed right-[-1000%]'}>
     <div>
     <form action="" className='ml-4'>
                     <div htmlFor="" className='border-[1px] p-1 border-green-500 mt-5'>

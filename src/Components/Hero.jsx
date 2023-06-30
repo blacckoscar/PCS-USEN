@@ -170,19 +170,17 @@ const Hero = () => {
                   <div className="about-content">
                     <h2 className="h2-sm section-title">Experience smart digital marketing</h2>
                     <p className="section-text">
-                      Lorem Ipsum is simply dumm of free available in market the way printing and typesetting industry has been
-                      the industrys
-                      standard dummy text ever.
+                    Makers Digital Pro is a leading company that specializes in experience smart digital marketing. By harnessing data-driven insights, advanced automation, and personalized strategies, they empower businesses to create engaging, tailored experiences that drive customer satisfaction, brand loyalty, and significant business growth. 
                     </p>
                     <ul className="about-list">
                       <li className="has-before">
-                        Price of additional materials or parts (if needed)
+                      Data-driven Insights: Makers Digital Pro provides comprehensive data analysis and insights
                       </li>
                       <li className="has-before">
-                        Transportation cost for carrying new materials/parts
+                      Automation Solutions: The company offers advanced automation tools and strategies to streamline marketing processes
                       </li>
                       <li className="has-before">
-                        You will get 100% money back offer.
+                      Personalized Marketing Strategies
                       </li>
                     </ul>
                     <div className="btn-group">
@@ -205,8 +203,7 @@ const Hero = () => {
                   <p className="section-subtitle text-center">-What We Offer-</p>
                   <h2 className="h2 section-title text-center">Our Creative Services</h2>
                   <p className="section-text text-center">
-                    Get the most of reduction in your team’s operating costs for the whole product which creates amazing UI/UX
-                    experiences.
+                  Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                   </p>
                   <ul className="grid-list">
                     <li>
@@ -217,8 +214,7 @@ const Hero = () => {
                         <div className="card-content">
                           <h3 className="h3 card-title">UI/UX Creative Design</h3>
                           <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adi piscing semper turpis. Nullam eget luctlie gula and
-                            adipiscing elit.
+                          Makers Digital Pro's UI/UX unit weaves intuitive interfaces, stunning visuals, and seamless interactions into a delightful digital tapestry, elevating user experiences to new heights of satisfaction and delight.
                           </p>
                           <a href="*" className="btn-link">
                             <span className="span">Read More</span>
@@ -235,8 +231,7 @@ const Hero = () => {
                         <div className="card-content">
                           <h3 className="h3 card-title">App Development</h3>
                           <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adi piscing semper turpis. Nullam eget luctlie gula and
-                            adipiscing elit.
+                          Makers Digital Pro's app development unit creates enchanting mobile experiences, blending flawless functionality, stunning design, and intuitive interfaces that bring ideas to life, captivating users with every tap.
                           </p>
                           <a href="*" className="btn-link">
                             <span className="span">Read More</span>
@@ -253,8 +248,7 @@ const Hero = () => {
                         <div className="card-content">
                           <h3 className="h3 card-title">Professional Content Writer</h3>
                           <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adi piscing semper turpis. Nullam eget luctlie gula and
-                            adipiscing elit.
+                          Makers Digital Pro's Professional Content Writer unit weaves words into captivating narratives, crafting compelling stories that engage, inform, and inspire, leaving a lasting impression on readers with every written masterpiece.
                           </p>
                           <a href="*" className="btn-link">
                             <span className="span">Read More</span>
@@ -271,8 +265,7 @@ const Hero = () => {
                         <div className="card-content">
                           <h3 className="h3 card-title">Graphic Design</h3>
                           <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adi piscing semper turpis. Nullam eget luctlie gula and
-                            adipiscing elit.
+                          Makers Digital Pro's Graphics Design unit crafts visual wonders, blending creativity and precision to produce stunning artwork that elevates brands and leaves a lasting visual impact on audiences.
                           </p>
                           <a href="*" className="btn-link">
                             <span className="span">Read More</span>
@@ -302,7 +295,7 @@ const Hero = () => {
                         <data className="card-number" value={1}>01</data>
                         <h3 className="h3 card-title">Free Icon Plugin</h3>
                         <p className="card-text">
-                          Nullam ullamcorper condimentum urna eu accumsan.
+                        Versatile, customizable, high-quality icons. Empowering users.
                         </p>
                       </div>
                     </li>
@@ -310,8 +303,7 @@ const Hero = () => {
                       <div className="features-card">
                         <data className="card-number" value={2}>02</data>
                         <h3 className="h3 card-title">Free 6 Month Support</h3>
-                        <p className="card-text">
-                          Nullam ullamcorper condimentum urna eu accumsan.
+                        <p className="card-text">Valuable 6-month support for client success.
                         </p>
                       </div>
                     </li>
@@ -320,7 +312,7 @@ const Hero = () => {
                         <data className="card-number" value={3}>03</data>
                         <h3 className="h3 card-title">Customer Strategy</h3>
                         <p className="card-text">
-                          Nullam ullamcorper condimentum urna eu accumsan.
+                        Tailored customer strategies for exceptional results.
                         </p>
                       </div>
                     </li>
@@ -329,7 +321,7 @@ const Hero = () => {
                         <data className="card-number" value={4}>04</data>
                         <h3 className="h3 card-title">Best Premimum Image</h3>
                         <p className="card-text">
-                          Nullam ullamcorper condimentum urna eu accumsan.
+                          Best premium images for captivating visuals.
                         </p>
                       </div>
                     </li>
@@ -347,7 +339,7 @@ const Hero = () => {
                         <data className="card-number" value={6}>06</data>
                         <h3 className="h3 card-title">Very Reasonable Price</h3>
                         <p className="card-text">
-                          Nullam ullamcorper condimentum urna eu accumsan.
+                        Cutting-edge features for unrivaled performance..
                         </p>
                       </div>
                     </li>
@@ -377,15 +369,7 @@ const Hero = () => {
                         </button>
                         <div className="card-content">
                           <p>
-                            Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                            posuere semper, libero ex
-                            hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                            amet condimentum
-                            erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                            luctus. Nullam
-                            tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                            Sed varius, diam
-                            vitae posuere semper.
+                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
                       </div>
@@ -403,15 +387,7 @@ const Hero = () => {
                         </button>
                         <div className="card-content">
                           <p>
-                            Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                            posuere semper, libero ex
-                            hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                            amet condimentum
-                            erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                            luctus. Nullam
-                            tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                            Sed varius, diam
-                            vitae posuere semper.
+                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
                       </div>
@@ -429,15 +405,7 @@ const Hero = () => {
                         </button>
                         <div className="card-content">
                           <p>
-                            Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                            posuere semper, libero ex
-                            hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                            amet condimentum
-                            erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                            luctus. Nullam
-                            tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                            Sed varius, diam
-                            vitae posuere semper.
+                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
                       </div>
@@ -455,15 +423,7 @@ const Hero = () => {
                         </button>
                         <div className="card-content">
                           <p>
-                            Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                            posuere semper, libero ex
-                            hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                            amet condimentum
-                            erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                            luctus. Nullam
-                            tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                            Sed varius, diam
-                            vitae posuere semper.
+                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
                       </div>
@@ -481,15 +441,7 @@ const Hero = () => {
                         </button>
                         <div className="card-content">
                           <p>
-                            Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                            posuere semper, libero ex
-                            hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                            amet condimentum
-                            erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                            luctus. Nullam
-                            tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                            Sed varius, diam
-                            vitae posuere semper.
+                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
                       </div>
