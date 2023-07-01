@@ -330,7 +330,7 @@ const Hero = () => {
                         <data className="card-number" value={5}>05</data>
                         <h3 className="h3 card-title">Most Advanced Features</h3>
                         <p className="card-text">
-                          Nullam ullamcorper condimentum urna eu accumsan.
+                        Best premium images for captivating visuals.
                         </p>
                       </div>
                     </li>

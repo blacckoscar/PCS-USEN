@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
-import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai"
-import { FaMailBulk, FaPhoneAlt, FaPlus, FaSitemap } from 'react-icons/fa';
+import {AiFillCloseCircle, AiOutlineClose, AiOutlineMenu} from "react-icons/ai"
+import {FaMailBulk, FaPhoneAlt, FaPlus, FaSitemap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
@@ -102,14 +102,15 @@ useEffect(() => {
       <a href="/" className="logo">PCS USEN</a>
       <nav className={!nav2 ? 'md:navbar lg:hidden fixed left-0 top-0 h-screen w-[60%] p-5 items-center  border-[1px] bg-[#f5fffc] ease-in-out duration-1000 drop-shadow-2xl':'fixed left-[-100%] navbar'} >
         <div className="md:hidden">
-          <a href="/" className="logo">PCS USEN</a>
+          <a href="/" className="">PCS USEN</a>
           <button className="" >
-            <AiOutlineClose onClick={handleNav2} size={30} color='black' className='ml-96 lg:hi z-50'/>
+            <AiOutlineClose onClick={handleNav2} size={30} color='black' className='ml-72 z-50'/>
           </button>
         </div>
         <ul
          className="navbar-list z-50 "
          >
+                    <AiFillCloseCircle size={27} color='' onClick={handleNav2} className="ml-72 lg:hidden"/>
           <li >
             <Link to={"/"} className="navbar-link" style={{fontWeight: "bolder", fontSize: 20, }}>Home</Link>
           </li>

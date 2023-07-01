@@ -1,21 +1,20 @@
 import React from 'react'
-import {FaArrowRight} from "react-icons/fa"
 import {FaPlus} from "react-icons/fa"
 
 export default function Pricing() {
   return (
     <div className='mt-44 text-center'>
-         <h1 className='font-bold text-6xl text-blue-950 mb-10
+         <h1 className='font-bold md:text-6xl text-4xl text-blue-950 mb-10
         '>Our Pricing</h1>
         {/* <div className='bg-[#f7f3f5] pt-7'> */}
             {/* <h1 className='font-bold text-6xl'>SMO And SEO Package Plans </h1> */}
-            <h5 className='font-bold mt-6 text-4xl'>All plans include</h5>
+            <h5 className='font-bold md:mt-6 -mt-6 md:text-4xl'>All plans include</h5>
         {/* </div> */}
 
 
-        <div className='mt-20 mb-10'>
+        <div className='mt-20 mb-10 md:ml-24'>
             {/* <h1 className='font-bold text-5xl'>Pro Services</h1> */}
-            <div className='flex justify-center gap-16 mt-16'>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 justify-center gap-16 mt-16'>
             <div className='w-[400px] cursor-pointer bg-gray-100'>
                 <section className='bg-[#28af60] text-white p-5'>
                 <h1 className='font-bold text-6xl'>Marketing</h1>
@@ -97,7 +96,7 @@ export default function Pricing() {
                 </ul>
             </div>
         </div>
-            <div className='flex justify-center gap-16 mt-16'>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 justify-center gap-16 mt-16'>
             <div className='w-[400px] cursor-pointer bg-gray-100'>
                 <section className='bg-[#28af60] text-white p-5'>
                 <h1 className='font-bold text-6xl'>E Commerce (Advance)</h1>
@@ -179,7 +178,7 @@ export default function Pricing() {
                 </ul>
             </div>
         </div>
-            <div className='flex justify-center gap-16 mt-16'>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 justify-center gap-16 mt-16'>
             <div className='w-[400px] cursor-pointer bg-gray-100'>
                 <section className='bg-[#28af60] text-white p-5'>
                 <h1 className='font-bold text-6xl'>Video Editing</h1>
@@ -250,7 +249,7 @@ export default function Pricing() {
                 </ul>
             </div>
         </div>
-            <div className='flex justify-center gap-16 mt-16'>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 justify-center gap-16 mt-16'>
             <div className='w-[400px] cursor-pointer bg-gray-100'>
                 <section className='bg-[#28af60] text-white p-5'>
                 <h1 className='font-bold text-6xl'>Logo Packages/Logo Redo</h1>

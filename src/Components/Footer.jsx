@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-brand">
           <a href="/" className="logo">PCS USEN</a>
           <p className="footer-text">
-            Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          PCS USEN, a visionary leader driving innovation with passion and purpose.
           </p>
           <form action className="newsletter-form">
             <input type="email" name="email_address" placeholder="Enter your email" required className="email-field" />
@@ -46,22 +46,22 @@ const Footer = () => {
             <p className="footer-list-title">Company</p>
           </li>
           <li>
-            <a href="/" className="footer-link">About Company</a>
+            <a href="/about" className="footer-link">About Company</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Our Services</a>
+            <a href="/services" className="footer-link">Our Services</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Our Portfolio</a>
+            <a href="/team" className="footer-link">Our Portfolio</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Our Blog</a>
+            <a href="/pricing" className="footer-link">Our Price</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Latest News</a>
+            <a href="/clients" className="footer-link">Latest News</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Contact Us</a>
+            <a href="/contact" className="footer-link">Contact Us</a>
           </li>
         </ul>
         <ul className="footer-list">
@@ -73,7 +73,7 @@ const Footer = () => {
             <address className="contact-link address">
             324 Main Street 
 Suit 1071
-Laurel MD 20707
+where ever
             </address>
           </li>
           <li className="footer-item">
@@ -86,24 +86,24 @@ Laurel MD 20707
           </li>
           <li className="footer-item">
             <ul className="social-list">
-              <li>
-                <a href="/" className="social-link">
-                  <FaFacebook name="logo-facebook" />
+              <li className=''>
+                <a href="/" className="">
+                  <FaFacebook name="logo-facebook" size={25} className="hover:text-green-500" />
                 </a>
               </li>
               <li>
-                <a href="/" className="social-link">
-                  <FaTwitter name="logo-twitter" />
+                <a href="/" className="">
+                  <FaTwitter name="logo-twitter" size={25} className="hover:text-green-500"/>
                 </a>
               </li>
               <li>
-                <a href="/" className="social-link">
-                  <FaInstagram name="logo-instagram" />
+                <a href="/" className="">
+                  <FaInstagram name="logo-instagram" size={25} className="hover:text-green-500"/>
                 </a>
               </li>
               <li>
-                <a href="/" className="social-link">
-                  <FaPinterest name="logo-pinterest" />
+                <a href="/" className="">
+                  <FaPinterest name="logo-pinterest" size={25} className="hover:text-green-500"/>
                 </a>
               </li>
             </ul>
@@ -114,7 +114,7 @@ Laurel MD 20707
     <div className="footer-bottom">
       <div className="container">
         <p className="copyright">
-          © 2022 PCS USEN | All Rights Reserved by <a href="*" className="copyright-link">Usen's Agency</a>
+          © 2023 PCS USEN | All Rights Reserved by <a href="*" className="copyright-link">Usen's Agency</a>
         </p>
         <ul className="footer-bottom-list">
           <li>
