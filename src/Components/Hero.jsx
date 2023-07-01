@@ -353,7 +353,7 @@ const Hero = () => {
                 <div className="container">
                   <div className="title-wrapper">
                     <h2 className="h2 section-title">Discover Frequently Asked Questions?</h2>
-                    <a href="*" className="btn btn-primary">Work Together</a>
+                    <a href="" className="btn btn-primary">Work Together</a>
                   </div>
                   <ul className="grid-list">
                     <li>

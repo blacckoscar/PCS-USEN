@@ -3,6 +3,8 @@ import '../App.css';
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai"
 import { FaMailBulk, FaPhoneAlt, FaPlus, FaSitemap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Son from "../Assets/pcs.png";
+
 
 
 
@@ -99,10 +101,18 @@ useEffect(() => {
 // backgroundColor: navbarColor,
 // boxShadow: navbarShadow ? '0 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
 }}>
-      <a href="/" className="logo">PCS USEN</a>
+      {/* <a href="/" className="logo">PCS USEN</a> */}
+      <Link to="/" className="logo">
+            <img src={Son} alt='pcs' className='h-24 w-96' />
+            {/* PCS USEN */}
+          </Link>
+
       <nav className={!nav2 ? 'md:navbar lg:hidden fixed left-0 top-0 h-screen w-[60%] p-5 items-center  border-[1px] bg-[#f5fffc] ease-in-out duration-1000 drop-shadow-2xl':'fixed left-[-100%] navbar'} >
         <div className="md:hidden">
-          <a href="/" className="logo">PCS USEN</a>
+        <Link to="/" className="logo">
+            <img src={Son} alt='pcs' className='h-24 w-96' />
+            {/* PCS USEN */}
+          </Link>
           <button className="" >
             <AiOutlineClose onClick={handleNav2} size={30} color='black' className='ml-96 lg:hi z-50'/>
           </button>
@@ -139,8 +149,8 @@ useEffect(() => {
       <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Sign In</button>
       <div className="overlay" data-nav-toggler data-overlay />
     </div>
-    <div className={!nav ? 'fixed right-0 top-0 w-[40%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed right-[-1000%]'}>
-    <div>
+    <div className={!nav ? 'fixed right-0 top-0 w-[40%] h-[100%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed right-[-1000%]'}>
+    {/* <div>
     <form action="" className='ml-4'>
                     <div htmlFor="" className='border-[1px] p-1 border-green-500 mt-5'>
                     <input type="text" placeholder='Enter your full name' className='md:w-[600px] ml-2  h-20 outline-none' />
@@ -164,7 +174,6 @@ useEffect(() => {
                         <option value="">Other query</option>
                     </select>
                     </div>
-                    {/*  */}
                     <div>
                     <select name="" id="" className='md:w-[620px] bg-transparent border-green-500 w-[275px] border-[1px] h-24 mt-5 outline-none p-2'>
                         <option value="">--From Where you Know about us--</option>
@@ -200,7 +209,7 @@ useEffect(() => {
                         <li className='font-bold mt-2 flex gap-8 mr-10'><FaPlus size={20}  /><a href='/about'>PHuman Resource : +91 9051955309</a></li>
                         <li className='font-bold mt-2 flex gap-8 mr-10'><FaPlus size={20}  /> <a href='/about'>USA Support : +1 415 800 3074</a></li>
                     </ul>
-                </div>
+                </div> */}
     </div>
   </header>
   )

@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa'
+import Son from "../Assets/pcs.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -7,10 +9,13 @@ const Footer = () => {
     <div className="footer-top section">
       <div className="container">
         <div className="footer-brand">
-          <a href="/" className="logo">PCS USEN</a>
+          {/* <a href="/" className="logo">PCS USEN</a> */}
+          <Link to="/" className="">
+            <img src={Son} alt='pcs' className='h-24 w-96' />
+            {/* PCS USEN */}
+          </Link>
           <p className="footer-text">
-            Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-          </p>
+We provide you with the ability to customize PPC, Social Media Marketing, lead generation, inbound marketing, email campaigns, SEO-based responsive websites...      </p>
           <form action className="newsletter-form">
             <input type="email" name="email_address" placeholder="Enter your email" required className="email-field" />
             <button type="submit" className="form-btn">
@@ -87,22 +92,22 @@ Laurel MD 20707
           <li className="footer-item">
             <ul className="social-list">
               <li>
-                <a href="/" className="social-link">
+                <a href="/" className="">
                   <FaFacebook name="logo-facebook" />
                 </a>
               </li>
               <li>
-                <a href="/" className="social-link">
+                <a href="/" className="">
                   <FaTwitter name="logo-twitter" />
                 </a>
               </li>
               <li>
-                <a href="/" className="social-link">
+                <a href="/" className="">
                   <FaInstagram name="logo-instagram" />
                 </a>
               </li>
               <li>
-                <a href="/" className="social-link">
+                <a href="/" className="">
                   <FaPinterest name="logo-pinterest" />
                 </a>
               </li>
