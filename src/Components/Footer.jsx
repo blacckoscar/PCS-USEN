@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-brand">
           {/* <a href="/" className="logo">PCS USEN</a> */}
           <Link to="/" className="">
-            <img src={Son} alt='pcs' className='h-24 w-96' />
+            <img src={Son} alt='pcs' className='h-24 w-60' />
             {/* PCS USEN */}
           </Link>
           <p className="footer-text">
@@ -28,22 +28,22 @@ We provide you with the ability to customize PPC, Social Media Marketing, lead g
             <p className="footer-list-title">Our Services</p>
           </li>
           <li>
-            <a href="/" className="footer-link">Strategy &amp; Research</a>
+            <a href="/plans" className="footer-link">Strategy &amp; Research</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Web Development</a>
+            <a href="/webdev" className="footer-link">Web Development</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Web Solution</a>
+            <a href="/web" className="footer-link">Web Solution</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Digital Merketing</a>
+            <a href="digital" className="footer-link">Digital Merketing</a>
           </li>
           <li>
-            <a href="/" className="footer-link">App Design</a>
+            <a href="/app" className="footer-link">App Design</a>
           </li>
           <li>
-            <a href="/" className="footer-link">App Development</a>
+            <a href="/appdev" className="footer-link">App Development</a>
           </li>
         </ul>
         <ul className="footer-list">
@@ -51,22 +51,22 @@ We provide you with the ability to customize PPC, Social Media Marketing, lead g
             <p className="footer-list-title">Company</p>
           </li>
           <li>
-            <a href="/" className="footer-link">About Company</a>
+            <a href="/about" className="footer-link">About Company</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Our Services</a>
+            <a href="/services" className="footer-link">Our Services</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Our Portfolio</a>
+            <a href="/clinets" className="footer-link">Our Portfolio</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Our Blog</a>
+            <a href="/blog" className="footer-link">Our Blog</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Latest News</a>
+            <a href="/news" className="footer-link">Latest News</a>
           </li>
           <li>
-            <a href="/" className="footer-link">Contact Us</a>
+            <a href="/contact" className="footer-link">Contact Us</a>
           </li>
         </ul>
         <ul className="footer-list">
@@ -92,22 +92,22 @@ Laurel MD 20707
           <li className="footer-item">
             <ul className="social-list">
               <li>
-                <a href="/" className="">
+                <a href="https://facebook.com" className="">
                   <FaFacebook name="logo-facebook" />
                 </a>
               </li>
               <li>
-                <a href="/" className="">
+                <a href="https://twitter.com" className="">
                   <FaTwitter name="logo-twitter" />
                 </a>
               </li>
               <li>
-                <a href="/" className="">
+                <a href="https://instagram.com" className="">
                   <FaInstagram name="logo-instagram" />
                 </a>
               </li>
               <li>
-                <a href="/" className="">
+                <a href="https://pintrest.com" className="">
                   <FaPinterest name="logo-pinterest" />
                 </a>
               </li>
@@ -119,14 +119,14 @@ Laurel MD 20707
     <div className="footer-bottom">
       <div className="container">
         <p className="copyright">
-          © 2022 PCS USEN | All Rights Reserved by <a href="*" className="copyright-link">Usen's Agency</a>
+          © 2022 Makers Digital Pro | All Rights Reserved by <a href="/about" className="copyright-link">MDP's Agency</a>
         </p>
         <ul className="footer-bottom-list">
           <li>
-            <a href="*" className="footer-bottom-link">Privacy Policy</a>
+            <a href="/policy" className="footer-bottom-link">Privacy Policy</a>
           </li>
           <li>
-            <a href="*" className="footer-bottom-link">Terms of Use</a>
+            <a href="/tnc" className="footer-bottom-link">Terms of Use</a>
           </li>
         </ul>
       </div>

@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='md:mt-20 -mt-20 text-center  section hero" id="home" aria-label="hero'>
         <div className='mt-10'>
-            <h1 className='font-bold text-7xl text-blue-950 mt-0'>About PCS USEN</h1>
+            <h1 className='font-bold text-7xl text-blue-950 mt-0'>About Makers Digital Pro</h1>
         </div>
         <div className='lg:flex justify-evenly p-2 mt-36 md:mt-64'>
             <div>

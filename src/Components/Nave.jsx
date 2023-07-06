@@ -103,14 +103,14 @@ useEffect(() => {
 }}>
       {/* <a href="/" className="logo">PCS USEN</a> */}
       <Link to="/" className="logo">
-            <img src={Son} alt='pcs' className='h-24 w-96' />
+            <img src={Son} alt='pcs' className='h-24 w-60' />
             {/* PCS USEN */}
           </Link>
 
       <nav className={!nav2 ? 'md:navbar lg:hidden fixed left-0 top-0 h-screen w-[60%] p-5 items-center  border-[1px] bg-[#f5fffc] ease-in-out duration-1000 drop-shadow-2xl':'fixed left-[-100%] navbar'} >
         <div className="md:hidden">
         <Link to="/" className="logo">
-            <img src={Son} alt='pcs' className='h-24 w-96' />
+            <img src={Son} alt='pcs' className='h-24 w-60' />
             {/* PCS USEN */}
           </Link>
           <button className="" >
