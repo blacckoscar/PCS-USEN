@@ -15,7 +15,12 @@ const Footer = () => {
             {/* PCS USEN */}
           </Link>
           <p className="footer-text">
+<<<<<<< HEAD
 We provide you with the ability to customize PPC, Social Media Marketing, lead generation, inbound marketing, email campaigns, SEO-based responsive websites...      </p>
+=======
+          PCS USEN, a visionary leader driving innovation with passion and purpose.
+          </p>
+>>>>>>> 8e21c5df09d0fd106e8fb5227f47dc285ad8a13a
           <form action className="newsletter-form">
             <input type="email" name="email_address" placeholder="Enter your email" required className="email-field" />
             <button type="submit" className="form-btn">
@@ -57,6 +62,7 @@ We provide you with the ability to customize PPC, Social Media Marketing, lead g
             <a href="/services" className="footer-link">Our Services</a>
           </li>
           <li>
+<<<<<<< HEAD
             <a href="/clinets" className="footer-link">Our Portfolio</a>
           </li>
           <li>
@@ -64,6 +70,15 @@ We provide you with the ability to customize PPC, Social Media Marketing, lead g
           </li>
           <li>
             <a href="/news" className="footer-link">Latest News</a>
+=======
+            <a href="/team" className="footer-link">Our Portfolio</a>
+          </li>
+          <li>
+            <a href="/pricing" className="footer-link">Our Price</a>
+          </li>
+          <li>
+            <a href="/clients" className="footer-link">Latest News</a>
+>>>>>>> 8e21c5df09d0fd106e8fb5227f47dc285ad8a13a
           </li>
           <li>
             <a href="/contact" className="footer-link">Contact Us</a>
@@ -78,7 +93,7 @@ We provide you with the ability to customize PPC, Social Media Marketing, lead g
             <address className="contact-link address">
             324 Main Street 
 Suit 1071
-Laurel MD 20707
+where ever
             </address>
           </li>
           <li className="footer-item">
@@ -91,6 +106,7 @@ Laurel MD 20707
           </li>
           <li className="footer-item">
             <ul className="social-list">
+<<<<<<< HEAD
               <li>
                 <a href="https://facebook.com" className="">
                   <FaFacebook name="logo-facebook" />
@@ -109,6 +125,26 @@ Laurel MD 20707
               <li>
                 <a href="https://pintrest.com" className="">
                   <FaPinterest name="logo-pinterest" />
+=======
+              <li className=''>
+                <a href="/" className="">
+                  <FaFacebook name="logo-facebook" size={25} className="hover:text-green-500" />
+                </a>
+              </li>
+              <li>
+                <a href="/" className="">
+                  <FaTwitter name="logo-twitter" size={25} className="hover:text-green-500"/>
+                </a>
+              </li>
+              <li>
+                <a href="/" className="">
+                  <FaInstagram name="logo-instagram" size={25} className="hover:text-green-500"/>
+                </a>
+              </li>
+              <li>
+                <a href="/" className="">
+                  <FaPinterest name="logo-pinterest" size={25} className="hover:text-green-500"/>
+>>>>>>> 8e21c5df09d0fd106e8fb5227f47dc285ad8a13a
                 </a>
               </li>
             </ul>
@@ -119,7 +155,11 @@ Laurel MD 20707
     <div className="footer-bottom">
       <div className="container">
         <p className="copyright">
+<<<<<<< HEAD
           © 2022 Makers Digital Pro | All Rights Reserved by <a href="/about" className="copyright-link">MDP's Agency</a>
+=======
+          © 2023 PCS USEN | All Rights Reserved by <a href="*" className="copyright-link">Usen's Agency</a>
+>>>>>>> 8e21c5df09d0fd106e8fb5227f47dc285ad8a13a
         </p>
         <ul className="footer-bottom-list">
           <li>
