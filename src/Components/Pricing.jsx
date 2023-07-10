@@ -38,15 +38,15 @@ export default function Pricing() {
          {/* <h1 className='font-bold md:text-6xl text-4xl text-blue-950 mb-10
         '>Our Pricing</h1> */}
 
-        <img  src={Son} className=" self-center items-center"/>
+        <img  src={Son} className=" w-screen self-center items-center"/>
 
         {/* <div className='bg-[#f7f3f5] pt-7'> */}
             {/* <h1 className='font-bold text-6xl'>SMO And SEO Package Plans </h1> */}
-            {/* <h5 className='font-bold md:mt-6 -mt-6 md:text-4xl'>All plans include</h5> */}
+            <h5 className='font-bold md:mt-6 -mt-6 md:text-4xl'>All plans include</h5>
         {/* </div> */}
 
 
-        <div className='mt-20 mb-10 md:ml-24'>
+        <div className='mt-20 mb-10 w-screen md:ml-24'>
             {/* <h1 className='font-bold text-5xl'>Pro Services</h1> */}
             <div className='grid lg:grid-cols-2 xl:grid-cols-3 justify-center gap-16 mt-16'>
             <div className='w-[400px] cursor-pointer bg-white shadow-2xl p-10 rounded-2xl'>
