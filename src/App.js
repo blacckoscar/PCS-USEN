@@ -13,7 +13,7 @@ import Team from './Components/Team';
 import Pricing from './Components/Pricing';
 import Cart from './Components/Cart';
 import { BiShoppingBag } from 'react-icons/bi';
-import { useCart } from 'react-use-cart';
+import { CartProvider, useCart } from 'react-use-cart';
 
 function App() {
   const { isEmpty, totalItems } = useCart();
@@ -38,6 +38,7 @@ function App() {
         </h1>
         <>
         <Nave  />
+        <CartProvider>
         <Routes>
           <Route path='/' element={<Hero  />} />
           <Route path='/about' element={<About  />} />
@@ -49,6 +50,7 @@ function App() {
           <Route path='/pricing' element={<Pricing  />} />
         </Routes>
         <Footer  />
+        </CartProvider>
         </>
         <SocialLinks />
         
