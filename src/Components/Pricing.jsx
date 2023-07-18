@@ -1,6 +1,6 @@
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import React, { useState } from 'react'
-import {FaPlus} from "react-icons/fa"
+import {FaArrowAltCircleDown, FaPlus} from "react-icons/fa"
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { useCart } from "react-use-cart";
 import Son from "../Assets/p.png"
@@ -9,12 +9,17 @@ import { Data } from "./Data";
 
 export default function Pricing() {
     // const [cart, setCart] = useState([]);
+    const [isDropDownOpen, setIsDropDownOPen] = useState(false);
     
 //   const { addItem } = useCart();
   const { addItem, items, updateItemQuantity, removeItem } = useCart();
 
   const handleAddToCart = (name, price, id) => {
     addItem({ id, name, price, quantity: 1 });
+  };
+
+  const toggleDropDown = () => {
+        setIsDropDownOPen(!isDropDownOpen)
   };
   
 
@@ -41,6 +46,17 @@ export default function Pricing() {
                 <section className='bg-[#28af60] text-white p-5 shadow-2xl rounded-2xl'>
                 <h1 className='font-bold text-6xl'>{item.name}</h1>
                 <h3 className='font-bold'> {item.price} </h3>
+                <FaArrowAltCircleDown size={30} onClick={toggleDropDown} />
+                { isDropDownOpen && (
+                <div>
+                    <ul className="bg-white grid gap-5 p-4 rounded-xl">
+                        <li className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app1}.</li>
+                        <li className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app2}. </li>
+                        <li className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app3}.</li>
+                    </ul>
+                </div>
+            )
+            }
                 </section>
                 <ul className='m-5 text-start p-8'>
                     <li className='flex gap-4'>
@@ -62,7 +78,7 @@ export default function Pricing() {
                     <li className='flex gap-4 mt-6'>
                         {item.icon}
                         <a href="/j"> {item.item5}</a>
-                        {item.id}
+                        {/* {item.id} */}
                     </li>
                 </ul>
 
@@ -70,6 +86,7 @@ export default function Pricing() {
                onClick={() => handleAddToCart(item.name, item.price, item.id)}
                 className='bg-[#28af60] w-[60%] ml-[60px] shadow-2xl rounded-2xl text-white p-5 cursor-pointer'>
                 {/* <h1 className='font-bold text-6xl'>Pixel</h1> */}
+                
                 <MdOutlineAddShoppingCart
             size={25}
             fontWeight={'bold'}
@@ -82,6 +99,19 @@ export default function Pricing() {
           ))  }
         </div>
         </>
+        <div>
+            <button onClick={toggleDropDown} className='bg-[#28af60] w-[60%] ml-[60px] shadow-2xl rounded-2xl text-white p-5 cursor-pointer'>more</button>
+            { isDropDownOpen && (
+                <div>
+                    <ul>
+                        <li>$200 </li>
+                        <li>$500 </li>
+                        <li>$130 </li>
+                    </ul>
+                </div>
+            )
+            }
+        </div>
     </div>
   )
 }

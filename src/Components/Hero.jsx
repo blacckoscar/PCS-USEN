@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../App.css';
 import {AiFillPlayCircle} from "react-icons/ai"
 import { motion } from "framer-motion";
@@ -25,6 +25,28 @@ const Hero = () => {
     duration: 0.8,
     type: "spring",
   };
+
+  const [isReadOne, setIsReadOne] = useState(false)
+  const [isRead2, setIsRead2] = useState(false)
+  const [isRead3, setIsRead3] = useState(false)
+  const [isRead4, setIsRead4] = useState(false)
+  const [isRead5, setIsRead5] = useState(false)
+
+  const toggleRead = () => {
+    setIsReadOne(!isReadOne)
+  }
+  const toggleRead2 = () => {
+    setIsRead2(!isRead2)
+  }
+  const toggleRead3 = () => {
+    setIsRead3(!isRead3)
+  }
+  const toggleRead4 = () => {
+    setIsRead4(!isRead4)
+  }
+  const toggleRead5 = () => {
+    setIsRead5(!isRead5)
+  }
 
     useEffect(() => {
         /**
@@ -349,34 +371,36 @@ const Hero = () => {
               {/* 
           - *FAQ
         */}
-              <section className="section faq" aria-label="frequently asked questions">
+              <section className="section faq" >
                 <div className="container">
                   <div className="title-wrapper">
                     <h2 className="h2 section-title">Discover Frequently Asked Questions?</h2>
-                    <a href="" className="btn btn-primary">Work Together</a>
+                    <a className="btn btn-primary">Work Together</a>
                   </div>
                   <ul className="grid-list">
                     <li>
                       <div className="faq-card">
-                        <button className="card-action" data-accordion-action>
+                        <button onClick={toggleRead} className="card-action">
                           <h3 className="h3 card-title">
                             01. Curious about how to build your own UX strategy? Here are five simple steps.
                           </h3>
                           <div className="action-icon">
-                            <ion-icon name="add-outline" aria-hidden="true" className="open" />
-                            <ion-icon name="remove-outline" aria-hidden="true" className="close" />
+                            <ion-icon name="add-outline"  className="open" />
+                            <ion-icon name="remove-outline"  className="close" />
                           </div>
                         </button>
-                        <div className="card-content">
+                        {isReadOne && (
+                        <div className="">
                           <p>
                           Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
+                            )}
                       </div>
                     </li>
                     <li>
                       <div className="faq-card">
-                        <button className="card-action" data-accordion-action>
+                        <button onClick={toggleRead2} className="card-action">
                           <h3 className="h3 card-title">
                             02. Where Could a Career in UX Take You? Agency vs. In-House vs. Freelance?
                           </h3>
@@ -385,16 +409,18 @@ const Hero = () => {
                             <ion-icon name="remove-outline" aria-hidden="true" className="close" />
                           </div>
                         </button>
-                        <div className="card-content">
+                        {isRead2 &&( 
+                        <div className="">
                           <p>
                           Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
+                        ) }
                       </div>
                     </li>
                     <li>
                       <div className="faq-card">
-                        <button className="card-action" data-accordion-action>
+                        <button onClick={toggleRead3} className="card-action">
                           <h3 className="h3 card-title">
                             03. What Is a Problem Statement in UX? (And How To Write One?
                           </h3>
@@ -403,17 +429,19 @@ const Hero = () => {
                             <ion-icon name="remove-outline" aria-hidden="true" className="close" />
                           </div>
                         </button>
-                        <div className="card-content">
+                        {isRead3 && (
+                        <div className="">
                           <p>
                           Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
+                        )}
                       </div>
                     </li>
                     <li>
                       <div className="faq-card">
                         <button className="card-action" data-accordion-action>
-                          <h3 className="h3 card-title">
+                          <h3 onClick={toggleRead4} className="h3 card-title">
                             04. There are several techniques UX designers employ to arrive at a succinct?
                           </h3>
                           <div className="action-icon">
@@ -421,16 +449,18 @@ const Hero = () => {
                             <ion-icon name="remove-outline" aria-hidden="true" className="close" />
                           </div>
                         </button>
-                        <div className="card-content">
+                        {isRead4 && (
+                        <div className="">
                           <p>
                           Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
+                        )}
                       </div>
                     </li>
                     <li>
                       <div className="faq-card">
-                        <button className="card-action" data-accordion-action>
+                        <button onClick={toggleRead5} className="card-action" data-accordion-action>
                           <h3 className="h3 card-title">
                             05. What are the obstacles users are facing? What are they trying to do?
                           </h3>
@@ -439,11 +469,13 @@ const Hero = () => {
                             <ion-icon name="remove-outline" aria-hidden="true" className="close" />
                           </div>
                         </button>
+                        {isRead5 && (
                         <div className="card-content">
                           <p>
                           Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
                           </p>
                         </div>
+                        )}
                       </div>
                     </li>
                   </ul>

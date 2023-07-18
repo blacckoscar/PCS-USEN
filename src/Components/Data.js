@@ -15,6 +15,9 @@ export const Data = [
     {
         name: "Basic Website",
         price: "$450 USD",
+        app1: "customized $ 5,000",
+        app2: "Landing page  $ 1,000",
+        app3: "E-commerce  $ 10,000",
         icon: <FaPlus  size={20}/>,
         item1: "Than 4 - 5 Pages",
         item2: "Standard Design",
@@ -92,6 +95,9 @@ export const Data = [
     {
         name: "Mobile App",
         price: "$1000 - 10,000 USD",
+        app1: "full app $ 5,000",
+        app2: "Mini app $ 1,000",
+        app3: "IOS/Android app $ 10,000",
         icon: <FaPlus  size={20}/>,
         item1: "Pending On Requirements",
         item2: "",

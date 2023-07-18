@@ -10,20 +10,20 @@ import Cat from "./Carts"
 // import MobileNav from "./MobileNav";
 import { Link, useNavigate } from "react-router-dom";
 
-const firebaseConfig = {
-  // Your Firebase config
-  apiKey: "AIzaSyCRSVN6rIpkPQKLz77NFcES36Fpe665T9k",
-  authDomain: "nextberries-cb5b9.firebaseapp.com",
-  projectId: "nextberries-cb5b9",
-  storageBucket: "nextberries-cb5b9.appspot.com",
-  messagingSenderId: "44749615279",
-  appId: "1:44749615279:web:0b3e110f248c8e8b3ae45a",
-  measurementId: "G-9QZ27VRVHL",
-};
+// const firebaseConfig = {
+//   // Your Firebase config
+//   apiKey: "AIzaSyCRSVN6rIpkPQKLz77NFcES36Fpe665T9k",
+//   authDomain: "nextberries-cb5b9.firebaseapp.com",
+//   projectId: "nextberries-cb5b9",
+//   storageBucket: "nextberries-cb5b9.appspot.com",
+//   messagingSenderId: "44749615279",
+//   appId: "1:44749615279:web:0b3e110f248c8e8b3ae45a",
+//   measurementId: "G-9QZ27VRVHL",
+// };
 
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
-const firestore = firebase.firestore();
+// const firestore = firebase.firestore();
 
 const Cart = () => {
   const {
@@ -68,17 +68,17 @@ const Cart = () => {
 
     };
 
-    firestore
-      .collection("Users")
-      .doc(firebase.auth().currentUser.uid)
-      .collection("Payments")
-      .add(data)
-      .then((docRef) => {
-        console.log("Payment data saved with ID:", docRef.id);
-      })
-      .catch((error) => {
-        console.error("Error saving payment data:", error);
-      });
+    // firestore
+    //   .collection("Users")
+    //   .doc(firebase.auth().currentUser.uid)
+    //   .collection("Payments")
+    //   .add(data)
+    //   .then((docRef) => {
+    //     console.log("Payment data saved with ID:", docRef.id);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error saving payment data:", error);
+    //   });
 
       // navigate()
 
@@ -119,17 +119,17 @@ const Cart = () => {
       productsInCart,
       status: 'Attempt'
     };
-    firestore
-    .collection("Users")
-    .doc(firebase.auth().currentUser.uid)
-    .collection("OrderAttempt")
-    .add(data)
-    .then((docRef) => {
-      console.log("Payment data saved with ID:", docRef.id);
-    })
-    .catch((error) => {
-      console.error("Error saving payment data:", error);
-    }); 
+    // firestore
+    // .collection("Users")
+    // .doc(firebase.auth().currentUser.uid)
+    // .collection("OrderAttempt")
+    // .add(data)
+    // .then((docRef) => {
+    //   console.log("Payment data saved with ID:", docRef.id);
+    // })
+    // .catch((error) => {
+    //   console.error("Error saving payment data:", error);
+    // }); 
    };
 
 
