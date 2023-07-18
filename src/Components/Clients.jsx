@@ -7,6 +7,7 @@ import ck4 from "../Assets/client-brand-05.png"
 import ck5 from "../Assets/client-brand-06.png"
 import ck6 from "../Assets/client-brand-07.png"
 import ck7 from "../Assets/client-brand-08.png"
+import { Data } from './Data'
 
 export default function Clients() {
   return (
@@ -56,6 +57,22 @@ export default function Clients() {
            </div>
            </div>
         </div>
+        {/* <div>
+            {
+                Data.map((item, index) => (
+                    <div key={index}>
+                        <div>
+                            <p>{item.name}</p>
+                            <p>{item.prize}</p>
+                            <p>{item.item1}</p>
+                            <p>{item.icon}</p>
+                            <p>{item.item2}</p>
+                            <p>{item.icon2}</p>
+                        </div>
+                    </div>
+                ))
+            }
+        </div> */}
     </div>
   )
 }
