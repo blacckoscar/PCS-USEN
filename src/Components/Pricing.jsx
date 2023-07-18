@@ -14,8 +14,8 @@ export default function Pricing() {
 //   const { addItem } = useCart();
   const { addItem, items, updateItemQuantity, removeItem } = useCart();
 
-  const handleAddToCart = (name, price, id) => {
-    addItem({ id, name, price, quantity: 1 });
+  const handleAddToCart = (name, price, id, app1, app2, app3,  app1$, app2$, app3$, ) => {
+    addItem({ id, name, price,  app1, app2, app3,  app1$, app2$, app3$, quantity: 1 });
   };
 
   const toggleDropDown = () => {
@@ -43,16 +43,16 @@ export default function Pricing() {
                 Data.map((item, index) => (
             <div className='grid lg:grid-cols-2 xl:grid-cols-3   justify-center gap-16 mt-16'>
             <div key={index} className='w-[400px] cursor-pointer bg-white shadow-2xl p-10 rounded-2xl'>
-                <section className='bg-[#28af60] text-white p-5 shadow-2xl rounded-2xl'>
+                <section  className='bg-[#28af60] text-white p-5 shadow-2xl rounded-2xl'>
                 <h1 className='font-bold text-6xl'>{item.name}</h1>
                 <h3 className='font-bold'> {item.price} </h3>
                 <FaArrowAltCircleDown size={30} onClick={toggleDropDown} />
                 { isDropDownOpen && (
                 <div>
                     <ul className="bg-white grid gap-5 p-4 rounded-xl">
-                        <li className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app1}.</li>
-                        <li className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app2}. </li>
-                        <li className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app3}.</li>
+                        <li  onClick={() => handleAddToCart( item.app1, item.app1$, item.id)} className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app1}.{item.app1$} <MdOutlineAddShoppingCart /></li>
+                        <li  onClick={() => handleAddToCart(item.app2, item.app2$, item.id)} className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app2}.{item.app2$} <MdOutlineAddShoppingCart /></li>
+                        <li  onClick={() => handleAddToCart(item.app3, item.app3$, item.id)} className="font-bold p-2 rounded-lg bg-green-600 text-3xl">{item.app3}.{item.app3$} <MdOutlineAddShoppingCart /></li> 
                     </ul>
                 </div>
             )

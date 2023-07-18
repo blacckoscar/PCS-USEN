@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
-import {AiFillPlayCircle} from "react-icons/ai"
+import {AiFillDownCircle, AiFillPlayCircle} from "react-icons/ai"
 import { motion } from "framer-motion";
 import card from "../Assets/srvc-icon1.png"
 import card1 from "../Assets/srvc-icon2.png"
 import card2 from "../Assets/srvc-icon3.png"
 import card3 from "../Assets/srvc-icon4.png"
 import { Link } from 'react-router-dom';
+import { MdAdd } from 'react-icons/md';
+import { FaMinus } from 'react-icons/fa';
 
 
 
@@ -31,6 +33,7 @@ const Hero = () => {
   const [isRead3, setIsRead3] = useState(false)
   const [isRead4, setIsRead4] = useState(false)
   const [isRead5, setIsRead5] = useState(false)
+  const [isRead6, setIsRead6] = useState(false)
 
   const toggleRead = () => {
     setIsReadOne(!isReadOne)
@@ -46,6 +49,9 @@ const Hero = () => {
   }
   const toggleRead5 = () => {
     setIsRead5(!isRead5)
+  }
+  const toggleRead6 = () => {
+    setIsRead6(!isRead6)
   }
 
     useEffect(() => {
@@ -382,17 +388,19 @@ const Hero = () => {
                       <div className="faq-card">
                         <button onClick={toggleRead} className="card-action">
                           <h3 className="h3 card-title">
-                            01. Curious about how to build your own UX strategy? Here are five simple steps.
+                            01. What services does your digital marketing firm offer?.
                           </h3>
                           <div className="action-icon">
-                            <ion-icon name="add-outline"  className="open" />
-                            <ion-icon name="remove-outline"  className="close" />
+                          {! isReadOne ? (
+                              <AiFillDownCircle size={30} aria-hidden="true" className="" /> ) : (
+                              <FaMinus name="add-outline" size={30} aria-hidden="true" className="" />
+                            )}
                           </div>
                         </button>
                         {isReadOne && (
                         <div className="">
                           <p>
-                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
+                          We offer a range of services including search engine optimization (SEO), social media marketing, pay-per-click advertising (PPC), content creation and marketing, email campaings marketing, app development and web design.
                           </p>
                         </div>
                             )}
@@ -402,17 +410,19 @@ const Hero = () => {
                       <div className="faq-card">
                         <button onClick={toggleRead2} className="card-action">
                           <h3 className="h3 card-title">
-                            02. Where Could a Career in UX Take You? Agency vs. In-House vs. Freelance?
+                            02. How can digital marketing help my business?
                           </h3>
                           <div className="action-icon">
-                            <ion-icon name="add-outline" aria-hidden="true" className="open" />
-                            <ion-icon name="remove-outline" aria-hidden="true" className="close" />
+                          {! isRead2 ? (
+                              <AiFillDownCircle size={30} aria-hidden="true" className="" /> ) : (
+                              <FaMinus name="add-outline" size={30} aria-hidden="true" className="" />
+                            )}
                           </div>
                         </button>
                         {isRead2 &&( 
                         <div className="">
                           <p>
-                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
+                         Digital marketing can help your business by increasing online visibility, driving website traffic, generating leads, enhancing brand awareness, engaging with customers, and ultimately, boosting sales and revenue.
                           </p>
                         </div>
                         ) }
@@ -422,17 +432,19 @@ const Hero = () => {
                       <div className="faq-card">
                         <button onClick={toggleRead3} className="card-action">
                           <h3 className="h3 card-title">
-                            03. What Is a Problem Statement in UX? (And How To Write One?
+                            03. What is your approach to digital marketing strategy?
                           </h3>
                           <div className="action-icon">
-                            <ion-icon name="add-outline" aria-hidden="true" className="open" />
-                            <ion-icon name="remove-outline" aria-hidden="true" className="close" />
+                          {! isRead3 ? (
+                              <AiFillDownCircle size={30} aria-hidden="true" className="" /> ) : (
+                              <FaMinus name="add-outline" size={30} aria-hidden="true" className="" />
+                            )}
                           </div>
                         </button>
                         {isRead3 && (
                         <div className="">
                           <p>
-                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
+                          Our approach involves data-driven insights, thorough market research, understanding your target audience, crafting personalized strategies, utilizing advanced automation tools, and continuous optimization to achieve measurable results.
                           </p>
                         </div>
                         )}
@@ -442,17 +454,19 @@ const Hero = () => {
                       <div className="faq-card">
                         <button className="card-action" data-accordion-action>
                           <h3 onClick={toggleRead4} className="h3 card-title">
-                            04. There are several techniques UX designers employ to arrive at a succinct?
+                            04. How do you target the right audience for our business?
                           </h3>
                           <div className="action-icon">
-                            <ion-icon name="add-outline" aria-hidden="true" className="open" />
-                            <ion-icon name="remove-outline" aria-hidden="true" className="close" />
+                          {! isRead4 ? (
+                              <AiFillDownCircle size={30} aria-hidden="true" className="" /> ) : (
+                              <FaMinus name="add-outline" size={30} aria-hidden="true" className="" />
+                            )}
                           </div>
                         </button>
                         {isRead4 && (
                         <div className="">
                           <p>
-                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
+                          We conduct thorough market research, analyze customer demographics and behavior, and develop buyer personas to identify and target the right audience for your business. This ensures that our marketing efforts reach the most relevant and interested potential customers.
                           </p>
                         </div>
                         )}
@@ -462,17 +476,41 @@ const Hero = () => {
                       <div className="faq-card">
                         <button onClick={toggleRead5} className="card-action" data-accordion-action>
                           <h3 className="h3 card-title">
-                            05. What are the obstacles users are facing? What are they trying to do?
+                            05. Are there any additional perks for working with you?
                           </h3>
                           <div className="action-icon">
-                            <ion-icon name="add-outline" aria-hidden="true" className="open" />
-                            <ion-icon name="remove-outline" aria-hidden="true" className="close" />
+                            {! isRead5 ? (
+                              <AiFillDownCircle  size={30} aria-hidden="true" className="" /> ) : (
+                              <FaMinus name="add-outline" size={30} aria-hidden="true" className="" />
+                            )}
                           </div>
                         </button>
                         {isRead5 && (
-                        <div className="card-content">
+                        <div className="">
                           <p>
-                          Makers Digital Pro's creative services enchant with imaginative visuals, captivating storytelling, and immersive experiences, crafting unforgettable brand moments that leave a sweet lasting impression.
+                          Yes, there are lots of additional benefits! In today's competitive landscape, customer satisfaction and brand loyalty are paramount. Thus, we offer exclusive deals and discounts to our customers. We also provide 24/7 customer care services and ensure you feel valued
+                          </p>
+                        </div>
+                        )}
+                      </div>
+                    </li>
+                    <li>
+                      <div className="faq-card">
+                        <button onClick={toggleRead6} className="card-action" data-accordion-action>
+                          <h3 className="h3 card-title">
+                            06. How do you target the right audience for our business?
+                          </h3>
+                          <div className="action-icon">
+                            {! isRead6 ? (
+                              <AiFillDownCircle  size={30} aria-hidden="true" className="" /> ) : (
+                              <FaMinus name="add-outline" size={30} aria-hidden="true" className="" />
+                            )}
+                          </div>
+                        </button>
+                        {isRead6 && (
+                        <div className="">
+                          <p>
+                          We conduct thorough market research, analyze customer demographics and behavior, and develop buyer personas to identify and target the right audience for your business. This ensures that our marketing efforts reach the most relevant and interested potential customers.
                           </p>
                         </div>
                         )}
