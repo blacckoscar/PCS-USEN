@@ -3,18 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@paypal/react-paypal-js": "^8.0.0",
+    "@paypal/react-paypal-js": "^8.1.0",
+    "@tailwindcss/typography": "^0.5.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "firebase": "^10.0.0",
-    "framer-motion": "^10.12.16",
+    "axios": "^1.4.0",
+    "firebase": "^9.22.1",
+    "framer-motion": "^10.13.0",
+    "paystack": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.9.0",
-    "react-router-dom": "^6.13.0",
+    "react-filter-search": "^1.1.11",
+    "react-firebaseui": "^6.0.0",
+    "react-icons": "^4.8.0",
+    "react-lightbox-component": "^1.2.1",
+    "react-modal": "^3.16.1",
+    "react-paystack": "^4.0.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-slider": "^2.0.4",
     "react-use-cart": "^1.13.0",
+    "slick-carousel": "^1.8.1",
+    "stream-http": "^3.2.0",
+    "swiper": "^9.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -43,7 +57,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2"
   }
 }

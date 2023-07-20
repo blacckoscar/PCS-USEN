@@ -144,36 +144,41 @@ function Google() {
     <img
             src={user.photoURL}
             alt={user.displayName}
-            className="rounded-full h-8 w-8"
+            className="rounded-full h-20 w-20 border-green-600 border-2 "
             />
             </p>
     {/* <i className="hidden md:flex w-2 h-2 top-5 right-8 bg-red-600 rounded-full absolute"></i> */}
     </div>
 
     :
-    <div className="font-bold text-lg cursor-pointer border-white z-50 border-2 " onClick={handleNav} >
-    <p className=" px-6 py-1 ">
+          <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Sign In</button>
 
-    Connect
-    </p>
-  </div >
+  //   <div className="font-bold text-lg cursor-pointer border-white z-50 border-2 " onClick={handleNav} >
+  //   <p className=" px-6 py-1 ">
+
+  //   Sign In
+  //   </p>
+  // </div >
 }
 
     {
          !nav ?
     <div
       className={
-        !nav
-          ? "hidden md:flex w-[27%] fixed items-center right-10 text-black bg-white rounded-md md:mt-5 mt-10 shadow-2xl drop-shadow-2xl p-10"
-          : "null"
+        !nav ? 'fixed right-0 top-0 w-[40%] h-[100%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed right-[-1000%]'
+        // !nav
+        //   ? "hidden md:flex w-[27%] fixed items-center right-10 text-black bg-white rounded-md md:mt-5 mt-10 shadow-2xl drop-shadow-2xl p-10"
+        //   : "null"
       }
     >
+                <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Close</button>
+
       {user ? (
-        <div className="text-center gap-10 flex-row justify-center">
+        <div className="text-center flex items-center gap-2 m-20 flex-col justify-center">
           <img
             src={user.photoURL}
             alt={user.displayName}
-            className="rounded-full ml-10 mb-3"
+            className="rounded-full border-green-600 border-2 ml-10 mb-3"
           />
           <p>{user.email}</p>
           <p>Welcome, {user.displayName}!</p>
@@ -187,12 +192,12 @@ function Google() {
           </button>
         </div>
       ) : (
-        <button onClick={handleSignIn} className="flex-row flex text-center bg-slate-200 z-50 border-2 ">
+        <div onClick={handleSignIn} className="flex-row flex text-center m-20 items-center justify-center bg-slate-200 z-50 border-2 ">
           <p className="px-6 py-1 flex-row flex items-center" >
           <FcGoogle size={40} />  
             Sign In with Google
             </p>
-        </button>
+        </div>
       )}
       {/* <Link
         to={"/shop"}

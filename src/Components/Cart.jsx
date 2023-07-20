@@ -4,10 +4,9 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import PaystackForm from "./PaystackForm";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
-// import Nav from "../component/Nav";
-import Cat from "./Carts"
-// import Homes from "./Homes";
-// import MobileNav from "./MobileNav";
+import Nav from "../component/Nav";
+import Homes from "./Homes";
+import MobileNav from "./MobileNav";
 import { Link, useNavigate } from "react-router-dom";
 
 const firebaseConfig = {
@@ -134,11 +133,11 @@ const Cart = () => {
 
 
   return (
-    <div className=" p-10 pt-20 bg--900">
+    <div className=" p-10 pt-20 bg-gray-500">
       <h1 className="text-white text-6xl text-center m-5">
         Cart
       </h1>
-      {/* <h1 className="text-light">{isEmpty ? "Your Cart is Empty" : ""}</h1>
+      <h1 className="text-light">{isEmpty ? "Your Cart is Empty" : ""}</h1>
       <div className="justify-content-center">
         <div
           responsive="sm"
@@ -211,7 +210,7 @@ const Cart = () => {
                   <td className="text-yellow-500 font-extralight md:ml-5 mt-5 pl-5">
                     shipping fee: Free Shipping
                     {/* {item.shipping_fee} */}
-                  {/* </td>
+                  </td>
                 </tr>
               );
             })}
@@ -251,12 +250,9 @@ const Cart = () => {
           </div>
         )}
       </div>
-         <div className="bg-gray-900">
-          {/* <Homes /> */}
-        {/* </div> */}
-      {/* <Nav /> */}
-      {/* <MobileNav /> */}
-      <Cat  />
+         {/* <div className="bg-gray-900">
+          <Homes />
+        </div> */}
     </div>
   );
 };

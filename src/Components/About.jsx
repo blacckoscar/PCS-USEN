@@ -16,9 +16,10 @@ const About = () => {
                 <h3 className='font-bold md:text-5xl text-4xl mt-3 text-blue-900'>WHO WE ARE</h3>
                 <p className='md:text-7xl text-5xl font-bold mt-10 text-gray-900'>Intelligent & Creative</p>
                 <p className='text-start mt-14'>
-            We, Digital Webber are a new generation, innovative, dynamic and result oriented Web Development Company based in Kolkata and Sydney. Since our inception in 2016 we have been providing top notch and world class service specializing in web design and development, graphic design and SEO services.
+                We Maker's Digital Pro, an innovative and dynamic Web Development Company in the US. With our in-depth knowledge of cutting-edge technologies and out-of-the-box thinking, we provide optimal solutions for even the most complex challenges. With over 10 years of experience, we have become a trusted name, collaborating with renowned brands like Drupal, Magento, WordPress, and more. Partner with us for exceptional marketing services that guarantee your success in the digital world.
                 </p>
-                <p className='text-start mt-9'>Equipped with in depth knowledge of the latest and evolving technologies in design and development and combined with innovative, out of the box and unorthodox thinking, which brings out the optimal solution for the hardest of complexities.</p>
+                <p className='text-start mt-9'> <h2 className='text-6xl'>Our Vision</h2> To lead the digital marketing industry. We strive to stay ahead by continuously adapting to the ever-evolving landscape, embracing the latest trends, strategies, and technologies. By doing so, we empower our clients with cutting-edge solutions that fuel their growth and deliver exceptional results. Join us on this transformative journey and experience the power of staying ahead in the digital realm.</p>
+                <p className='text-start mt-9'> <h2 className='text-6xl'>Our Mission</h2> To offer our clients the best possible marketing services. We believe in going beyond expectations, striving for excellence in everything we do. We understand that each client is unique, and we tailor our strategies and campaigns to their specific goals and requirements. By leveraging our extensive knowledge and experience, we help our clients achieve their business objectives and unlock their true potential.</p>
                 <div className='mt-16'>
                 <ul className='flex'>
                     <FaPlusCircle  size={20}/>

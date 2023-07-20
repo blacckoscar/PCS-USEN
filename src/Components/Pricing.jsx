@@ -1,6 +1,6 @@
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import React, { useState } from 'react'
-import {FaPlus} from "react-icons/fa"
+import {FaArrowAltCircleDown, FaPlus} from "react-icons/fa"
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { useCart } from "react-use-cart";
 import Son from "../Assets/p.png"
@@ -9,17 +9,22 @@ import { Data } from "./Data";
 
 export default function Pricing() {
     // const [cart, setCart] = useState([]);
+    const [isDropDownOpen, setIsDropDownOPen] = useState(false);
     
 //   const { addItem } = useCart();
   const { addItem, items, updateItemQuantity, removeItem } = useCart();
 
-  const handleAddToCart = (name, price, id) => {
-    addItem({ id, name, price, quantity: 1 });
+  const handleAddToCart = (name, price, id, app1, app2, app3,  app1$, app2$, app3$, ) => {
+    addItem({ id, name, price,  app1, app2, app3,  app1$, app2$, app3$, quantity: 1 });
+  };
+
+  const toggleDropDown = () => {
+        setIsDropDownOPen(!isDropDownOpen)
   };
   
 
   return (
-    <div className='mt-44 items-center text-center'>
+    <div className='mt-44 items-center justify-center text-center'>
             <>
          {/* <h1 className='font-bold md:text-6xl text-4xl text-blue-950 mb-10
         '>Our Pricing</h1> */}
@@ -32,13 +37,12 @@ export default function Pricing() {
         {/* </div> */}
 
 
-        <div className='mt-20 mb-10 grid lg:grid-cols-2 xl:grid-cols-3   justify-center gap-16 md:ml-24'>
+        <div className='mt-0 mb-10 grid lg:grid-cols-2 xl:grid-cols-4 items-center self-center justify-center gap-5 '>
             {/* <h1 className='font-bold text-5xl'>Pro Services</h1> */}
             {
                 Data.map((item, index) => (
-            <div className='grid lg:grid-cols-2 xl:grid-cols-3   justify-center gap-16 mt-16'>
-            <div key={index} className='w-[400px] cursor-pointer bg-white shadow-2xl p-10 rounded-2xl'>
-                <section className='bg-[#28af60] text-white p-5 shadow-2xl rounded-2xl'>
+            <div key={index} className='w-auto cursor-pointer bg-white shadow-2xl p-10 rounded-2xl'>
+                <section  className='bg-[#28af60] text-white p-5 shadow-2xl rounded-2xl'>
                 <h1 className='font-bold text-6xl'>{item.name}</h1>
                 <h3 className='font-bold'> {item.price} </h3>
                 </section>
@@ -62,7 +66,7 @@ export default function Pricing() {
                     <li className='flex gap-4 mt-6'>
                         {item.icon}
                         <a href="/j"> {item.item5}</a>
-                        {item.id}
+                        {/* {item.id} */}
                     </li>
                 </ul>
 
@@ -70,6 +74,7 @@ export default function Pricing() {
                onClick={() => handleAddToCart(item.name, item.price, item.id)}
                 className='bg-[#28af60] w-[60%] ml-[60px] shadow-2xl rounded-2xl text-white p-5 cursor-pointer'>
                 {/* <h1 className='font-bold text-6xl'>Pixel</h1> */}
+                
                 <MdOutlineAddShoppingCart
             size={25}
             fontWeight={'bold'}
@@ -78,10 +83,10 @@ export default function Pricing() {
                 <h4 className='font-bold'>Add To Cart</h4>
                 </section>
             </div>
-        </div>
           ))  }
         </div>
         </>
+        
     </div>
   )
 }

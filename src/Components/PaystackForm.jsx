@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { usePaystackPayment } from "react-paystack";
+import { usePaystackPayment } from "react-paystack";
 import firebase from "../firebaseconfig";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
@@ -39,45 +39,45 @@ const PaystackForm = ({ amount, email, onSuccess, onClose, handleOrderAttempts }
     handleOrderAttempts(response, userData);
   };
 
-  // const initializePayment = usePaystackPayment(config);
+  const initializePayment = usePaystackPayment(config);
 
-  // useEffect(() => {
-  //   // Check if user is already signed in
-  //   const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
-  //     if (user) {
-  //       const { displayName, photoURL } = user;
-  //       const updatedUserData = { ...userData, name: displayName };
-  //       setUserData(updatedUserData);
-  //     }
-  //   });
+  useEffect(() => {
+    // Check if user is already signed in
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        const { displayName, photoURL } = user;
+        const updatedUserData = { ...userData, name: displayName };
+        setUserData(updatedUserData);
+      }
+    });
 
-  //   return () => unsubscribe(); // Cleanup the event listener on unmount
-  // }, []);
+    return () => unsubscribe(); // Cleanup the event listener on unmount
+  }, []);
 
-  // const handlePayment = () => {
-  //   const user = firebase.auth().currentUser;
+  const handlePayment = () => {
+    const user = firebase.auth().currentUser;
 
-  //   if (user) {
-  //     initializePayment(onSuccessCallback, onCloseCallback);
-  //   } else {
-  //     // User is not signed in, show Firebase Google popup auth window
-  //     const provider = new firebase.auth.GoogleAuthProvider();
+    if (user) {
+      initializePayment(onSuccessCallback, onCloseCallback);
+    } else {
+      // User is not signed in, show Firebase Google popup auth window
+      const provider = new firebase.auth.GoogleAuthProvider();
 
-  //     firebase
-  //       .auth()
-  //       .signInWithPopup(provider)
-  //       .then((result) => {
-  //         const { displayName, photoURL } = result.user;
-  //         const updatedUserData = { ...userData, name: displayName };
-  //         setUserData(updatedUserData);
-  //         initializePayment(onSuccessCallback, onCloseCallback);
-  //       })
-  //       .catch((error) => {
-  //         console.error(error);
-  //       });
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then((result) => {
+          const { displayName, photoURL } = result.user;
+          const updatedUserData = { ...userData, name: displayName };
+          setUserData(updatedUserData);
+          initializePayment(onSuccessCallback, onCloseCallback);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
         
-  //   }
-  // };
+    }
+  };
 
   const navigate = useNavigate()
 
@@ -183,7 +183,7 @@ const PaystackForm = ({ amount, email, onSuccess, onClose, handleOrderAttempts }
         <div className="">
     
         <button
-          // onClick={handlePayment}
+          onClick={handlePayment}
           className="rounded-lg md:w-[53%] w-[80%] m-5 h-14 bg-white"
         >
           <div className="flex items-center justify-center " >

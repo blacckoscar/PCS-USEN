@@ -1,0 +1,27 @@
+.div-with-colored-corners {
+  position: relative;
+}
+
+.div-with-colored-corners::before,
+.div-with-colored-corners::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.div-with-colored-corners::before {
+  left: 0;
+  background-color: red;
+}
+
+.div-with-colored-corners::after {
+  right: 0;
+  background-color: red;
+}
+ 
+ .asuman{
+ border: 5px;
+ border-color:red;
+ }

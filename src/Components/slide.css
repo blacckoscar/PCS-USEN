@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  height: 100vh; /* Adjust this value to fit your layout */
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: 1; /* Default z-index for all images */
+}
+
+.image.center {
+  z-index: 2; /* Higher z-index for the center image */
+  transform: translate(-50%, -50%) scale(1.2); /* Higher scale for the center image */
+}

@@ -4,6 +4,7 @@ import {AiFillCloseCircle, AiOutlineClose, AiOutlineMenu} from "react-icons/ai"
 import {FaMailBulk, FaPhoneAlt, FaPlus, FaSitemap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Son from "../Assets/pcs.png";
+import Google from './Google';
 
 
 
@@ -144,71 +145,13 @@ useEffect(() => {
       <button className="">
       <AiOutlineMenu onClick={handleNav2} size={35} color='black' className='lg:hidden'/>
       </button>
-      <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Sign In</button>
-      <div className="overlay" data-nav-toggler data-overlay />
+      {/* <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Sign In</button> */}
+      {/* <div className="overlay" data-nav-toggler data-overlay /> */}
+    <Google />
     </div>
-    <div className={!nav ? 'fixed right-0 top-0 w-[40%] h-[100%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed right-[-1000%]'}>
-    {/* <div>
-    <form action="" className='ml-4'>
-                    <div htmlFor="" className='border-[1px] p-1 border-green-500 mt-5'>
-                    <input type="text" placeholder='Enter your full name' className='md:w-[600px] ml-2  h-20 outline-none' />
-                    </div>
-                    <div className='border-[1px] p-1 border-green-500 mt-5'>
-                    <input type="text" placeholder='Email' className='md:w-[600px] h-20 border-[2px] outline-none '/>
-                    </div>
-                    <div className='border-[1px] p-1 border-green-500 mt-5'>
-                    <input type="number" placeholder='Phone Number' className='md:w-[600px] h-20 outline-none'/>
-                    </div>
-                    <div className='border-[1px] p-1 border-green-500 mt-5'>
-                    <input type="text" placeholder='Country' className='md:w-[600px] h-20 outline-none'/>
-                    </div>
-                    <div>
-                    <select name="" id="" className='md:w-[620px]  bg-transparent w-[275px] border-green-500 border-[1px] h-24 mt-5 outline-none p-2'>
-                        <option value="" className=''>--Looking for--</option>
-                        <option value="">Web Design</option>
-                        <option value="">Mobile app Design</option>
-                        <option value="">SEO SMO and other</option>
-                        <option value="">Web Hoisting</option>
-                        <option value="">Other query</option>
-                    </select>
-                    </div>
-                    <div>
-                    <select name="" id="" className='md:w-[620px] bg-transparent border-green-500 w-[275px] border-[1px] h-24 mt-5 outline-none p-2'>
-                        <option value="">--From Where you Know about us--</option>
-                        <option value="">Through Google or other search engine</option>
-                        <option value="">Through Social Media</option>
-                        <option value="">From a friend</option>
-                        <option value="">Other</option>
-                    </select>
-                    </div>
-                    <div className='border-[1px] p-1 border-green-500 mt-5'>
-                    <input type="text" placeholder='Leave a comment here' className='md:w-[600px] h-20 outline-none'/>
-                    </div>
-                </form>
-                <button className='bg-green-500 w-96 lg:w-[620px] text-3xl rounded-md text-white mt-20 h-24'>Submit</button>
-          </div>
-          <div className='text-start mt-5'>
-                    <ul>
-                        <li className='font-bold text-4xl text-green-500'>Get in Touch  to Europe</li>
-                        <li className='font-bold mt-5 flex gap-8 mr-10'><FaSitemap  size={20}/> <a href='/about'>GP Block, Sector V, Bidhannagar, Kolkata, West <br /> Bengal 700091</a></li>
-                        <li className='font-bold mt-2 flex gap-8 mr-10'><FaPhoneAlt size={20}  /> <a href='/about'>Phone : + 234 9018659144</a></li>
-                        <li className='font-bold mt-2 flex gap-8 mr-10'><FaMailBulk size={20}  /> <a href='/about'>Email : asuquoekpenyon@gmail.Com</a></li>
-                    </ul>
-                    <ul className='mt-12'>
-                        <li className='font-bold text-4xl text-green-500'>Get In Touch to Australia</li>
-                        <li className='font-bold mt-5 flex gap-8 mr-10'><FaSitemap  size={20}/> <a href='/about'>GP Block, Sector V, Bidhannagar, Kolkata, West <br /> Bengal 700091</a></li>
-                        <li className='font-bold mt-2 flex gap-8 mr-10'><FaPhoneAlt size={20}  /> <a href='/about'>Phone : + 234 9018659144</a></li>
-                        <li className='font-bold mt-2 flex gap-8 mr-10'><FaMailBulk size={20}  /> <a href='/about'>Email : asuquoekpenyon@gmail.Com</a></li>
-                    </ul>
-
-                    <ul className='mt-12'>
-                        <li className='font-bold text-4xl text-green-500'>Contact Number</li>
-                        <li className='font-bold mt-5 flex gap-8 mr-10'><FaPhoneAlt size={20}  /> <a href='/about'>Legal Affairs : +91 9748677059</a></li>
-                        <li className='font-bold mt-2 flex gap-8 mr-10'><FaPlus size={20}  /><a href='/about'>PHuman Resource : +91 9051955309</a></li>
-                        <li className='font-bold mt-2 flex gap-8 mr-10'><FaPlus size={20}  /> <a href='/about'>USA Support : +1 415 800 3074</a></li>
-                    </ul>
-                </div> */}
-    </div>
+    {/* <div className={!nav ? 'fixed right-0 top-0 w-[40%] h-[100%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed right-[-1000%]'}> */}
+    
+    {/* </div> */}
   </header>
   )
 }
