@@ -3,7 +3,7 @@ import '../App.css';
 import {AiFillCloseCircle, AiOutlineClose, AiOutlineMenu} from "react-icons/ai"
 import {FaMailBulk, FaPhoneAlt, FaPlus, FaSitemap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import Son from "../Assets/pcs.png";
+import Son from "../Assets/1.png";
 import Google from './Google';
 
 
@@ -104,17 +104,19 @@ useEffect(() => {
 }}>
       {/* <a href="/" className="logo">PCS USEN</a> */}
       <Link to="/" className="logo">
-            <img src={Son} alt='pcs' className='h-24 w-60' />
+            <img src={Son} alt='pcs'
+             className='h-32 w-60' 
+             />
             {/* PCS USEN */}
           </Link>
 
       <nav className={!nav2 ? 'md:navbar lg:hidden fixed left-0 top-0 h-screen w-[60%] p-5 items-center  border-[1px] bg-[#f5fffc] ease-in-out duration-1000 drop-shadow-2xl':'fixed left-[-100%] navbar'} >
-        <div className="md:hidden">
+        {/* <div className="md:hidden">
           <a href="/" className="">PCS USEN</a>
           <button className="" >
             <AiOutlineClose onClick={handleNav2} size={30} color='black' className='ml-72 z-50'/>
           </button>
-        </div>
+        </div> */}
         <ul
          className="navbar-list z-50 "
          >
@@ -145,9 +147,9 @@ useEffect(() => {
       <button className="">
       <AiOutlineMenu onClick={handleNav2} size={35} color='black' className='lg:hidden'/>
       </button>
+    <Google />
       {/* <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Sign In</button> */}
       {/* <div className="overlay" data-nav-toggler data-overlay /> */}
-    <Google />
     </div>
     {/* <div className={!nav ? 'fixed right-0 top-0 w-[40%] h-[100%] p-5 border-green-500 border-[1px] bg-white ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed right-[-1000%]'}> */}
     
