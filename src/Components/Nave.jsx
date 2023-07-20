@@ -3,7 +3,7 @@ import '../App.css';
 import {AiFillCloseCircle, AiOutlineClose, AiOutlineMenu} from "react-icons/ai"
 import {FaMailBulk, FaPhoneAlt, FaPlus, FaSitemap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import Son from "../Assets/pcs.png";
+import Son from "../Assets/Makerspro.png";
 import Google from './Google';
 
 
@@ -104,7 +104,7 @@ useEffect(() => {
 }}>
       {/* <a href="/" className="logo">PCS USEN</a> */}
       <Link to="/" className="logo">
-            <img src={Son} alt='pcs' className='h-24 w-60' />
+            <img src={Son} alt='pcs' className='h-32 w-60' />
             {/* PCS USEN */}
           </Link>
 

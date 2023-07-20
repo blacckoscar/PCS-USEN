@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa'
-import Son from "../Assets/pcs.png";
+import Son from "../Assets/Makerspro.png";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-brand">
           {/* <a href="/" className="logo">PCS USEN</a> */}
-          <Link to="/" className="">
-            <img src={Son} alt='pcs' className='h-24 w-60' />
+          <Link to="/" className="bg-white p-4">
+            <img src={Son} alt='pcs' className='h-36 w-60 bg-white shadow-md rounded-lg hover:scale-105 duration-500 hover:shadow-green-400 shadow-white p-2' />
             {/* PCS USEN */}
           </Link>
           <p className="footer-text">

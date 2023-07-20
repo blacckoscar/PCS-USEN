@@ -166,7 +166,7 @@ const Cart = () => {
                     >
                       <div className="p-2 text-center rounded-md">
                         <img
-                          src={item.product_image}
+                          src={item.Image}
                           className="w-32 p-10 ml-3 md:ml-0 text-center shadow-2xl drop-shadow-2xl hover:scale-110 duration-500"
                           alt={item.title}
                         />
