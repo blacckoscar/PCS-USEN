@@ -9,6 +9,8 @@ import card3 from "../Assets/srvc-icon4.png"
 import { Link } from 'react-router-dom';
 import { MdAdd } from 'react-icons/md';
 import { FaMinus } from 'react-icons/fa';
+import HeroVideo from "../Assets/po.mp4"
+
 
 
 
@@ -117,6 +119,23 @@ const Hero = () => {
   return (
     <header>
     <div>
+    <div
+      // style={{width: '100%'}}
+      className=" h-40 sm:h-auto"
+        dangerouslySetInnerHTML={{
+      __html: `<video  style="
+      position: absolute;
+      width: 100%;
+      // top: -80px;
+      // height: 100%;
+      object-fit: cover;
+      z-index: -1;" 
+      autoplay loop muted playsinline>
+      <source src=${HeroVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+      </video>`
+    }}
+    />
           <div>
             <section>
               {/* 
@@ -131,7 +150,7 @@ const Hero = () => {
                     We are a full-service digital marketing firm that provides you with the ability to customize PPC, Social Media Marketing, lead generation, inbound marketing, email campaigns, SEO-based responsive websites, marketing automation solutions, and more.
 </p>
                     <div className="btn-group">
-                      <a href="/services" className="btn btn-primary">Get Started</a>
+                      <Link to="/pricing" className="btn btn-primary">Get Started</Link>
                       <Link to={'/services'} className="flex-btn">
                         <div className="btn-icon">
                           {/* <ion-icon name="play" aria-hidden="true" /> */}
@@ -149,7 +168,7 @@ const Hero = () => {
 
               {/* Services */}
                  {/* my part */}
-                 <div className='xl:flex grid lg:grid-cols-2 justify-center relative gap-10 pt-20 pb-20 bg-[#f5fffc] p-10'>
+                 <div className='xl:flex grid lg:grid-cols-2 justify-center relative gap-10 md:pt-40 pt-20, pb-20 bg-[#f5fffc] p-10'>
                 <h1 className='w-[80%] absolute hidden xl:inline bg-[#28af60] h-3 top-[45%]'> </h1>
                 <Link to={'/services'} className='bg-white text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] h-96'>
                   <div>

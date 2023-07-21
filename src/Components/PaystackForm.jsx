@@ -181,7 +181,7 @@ const PaystackForm = ({ amount, email, onSuccess, onClose, handleOrderAttempts }
         </button> */}
 
         <div className="">
-    
+{/*     
         <button
           onClick={handlePayment}
           className="rounded-lg md:w-[53%] w-[80%] m-5 h-14 bg-white"
@@ -194,7 +194,7 @@ const PaystackForm = ({ amount, email, onSuccess, onClose, handleOrderAttempts }
                                 src='https://static-00.iconduck.com/assets.00/paystack-icon-512x504-w7v8l6as.png'/> 
                                 <p className="text-black ml-2 text-lg">Pay With PayStack </p>
                                 </div>
-                   </button>
+                   </button> */}
         <br />
         <button
           onClick={handleNav}
@@ -234,9 +234,9 @@ const PaystackForm = ({ amount, email, onSuccess, onClose, handleOrderAttempts }
       </div> 
       :
       <button 
-      className="m-2 border-2 border-green-500 text-green-600 text-center font-bold p-1 hover:bg-green-500 hover:text-white duration-500 rounded-lg"
+      className="m-2 border-2 border-green-500 hover:text-green-500 hover:bg-white text-center items-center flex font-bold p-10 drop-shadow-2xl shadow-2xl bg-green-500 text-white rounded-lg"
       onClick={handleNav} >
-                        <MdOutlineShoppingCart size="1.7rem" className="ml-8" />
+                        <MdOutlineShoppingCart size="1.7rem" className="mr-2" />
        Pay Now
       </button>
       }

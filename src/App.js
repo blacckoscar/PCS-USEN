@@ -135,7 +135,7 @@ function App() {
 
         {/* <Google /> */}
 
-        <h1 className="font-bold fixed left-[80%] z-50 md:left-[92%] bottom-[5%]">
+        <h1 className="font-bold fixed right-[10%] z-50 md:right-[5%] bottom-[5%]">
           <Link to="/cart" className="">
             <BiShoppingBag
               size="55"

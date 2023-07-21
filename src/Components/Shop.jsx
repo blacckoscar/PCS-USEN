@@ -8,17 +8,18 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import MobileNav from "./MobileNav";
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  // Your Firebase configuration
-  apiKey: "AIzaSyCRSVN6rIpkPQKLz77NFcES36Fpe665T9k",
-  authDomain: "nextberries-cb5b9.firebaseapp.com",
-  projectId: "nextberries-cb5b9",
-  storageBucket: "nextberries-cb5b9.appspot.com",
-  messagingSenderId: "44749615279",
-  appId: "1:44749615279:web:0b3e110f248c8e8b3ae45a",
-  measurementId: "G-9QZ27VRVHL",
-  // ...
+  apiKey: "AIzaSyAvfSZiORsVohwIB696oyJYwxBcuh-jRRY",
+  authDomain: "markers-digital-pro.firebaseapp.com",
+  projectId: "markers-digital-pro",
+  storageBucket: "markers-digital-pro.appspot.com",
+  messagingSenderId: "99311584893",
+  appId: "1:99311584893:web:63167d001bb5c569f31314",
+  measurementId: "G-H43QCYF1XV"
 };
+
 
 // Initialize Firebase
 if (!firebase.apps.length) {

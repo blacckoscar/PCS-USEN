@@ -1,7 +1,10 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa'
-import Son from "../Assets/pcs.png";
+import Son from "../Assets/Makerspro.png";
+// import Son from "../Assets/Makerspro.png";
+import Son1 from "../Assets/payment.png";
 import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
@@ -10,12 +13,12 @@ const Footer = () => {
       <div className="container">
         <div className="footer-brand">
           {/* <a href="/" className="logo">PCS USEN</a> */}
-          <Link to="/" className="">
-            <img src={Son} alt='pcs' className='h-24 w-60' />
+          <Link to="/" className=" p-4">
+            <img src={Son} alt='pcs' className='h-36 w-60 bg-white shadow-md rounded-lg hover:scale-105 duration-500 hover:shadow-green-400 shadow-white p-2' />
             {/* PCS USEN */}
           </Link>
           <p className="footer-text">
-          PCS USEN, a visionary leader driving innovation with passion and purpose.
+          MAKERS DIGITAL PRO, a visionary leader driving innovation with passion and purpose.
           </p>
           <form action className="newsletter-form">
             <input type="email" name="email_address" placeholder="Enter your email" required className="email-field" />
@@ -29,22 +32,22 @@ const Footer = () => {
             <p className="footer-list-title">Our Services</p>
           </li>
           <li>
-            <a href="/plans" className="footer-link">Strategy &amp; Research</a>
+            <a href="/services" className="footer-link">Strategy &amp; Research</a>
           </li>
           <li>
-            <a href="/webdev" className="footer-link">Web Development</a>
+            <a href="/services" className="footer-link">Web Development</a>
           </li>
           <li>
-            <a href="/web" className="footer-link">Web Solution</a>
+            <a href="/services" className="footer-link">Web Solution</a>
           </li>
           <li>
-            <a href="digital" className="footer-link">Digital Merketing</a>
+            <a href="/services" className="footer-link">Digital Merketing</a>
           </li>
           <li>
-            <a href="/app" className="footer-link">App Design</a>
+            <a href="/services" className="footer-link">App Design</a>
           </li>
           <li>
-            <a href="/appdev" className="footer-link">App Development</a>
+            <a href="/services" className="footer-link">App Development</a>
           </li>
         </ul>
         <ul className="footer-list">
@@ -74,14 +77,14 @@ const Footer = () => {
           <li>
             <p className="footer-list-title">Contact Us</p>
           </li>
-          <li className="footer-item">
+          {/* <li className="footer-item">
             <ion-icon name="location" aria-hidden="true" />
             <address className="contact-link address">
             324 Main Street 
 Suit 1071
 where ever
             </address>
-          </li>
+          </li> */}
           <li className="footer-item">
             <ion-icon name="call" aria-hidden="true" />
             <a href="tel:+12407701632" className="contact-link">+12407701632</a>
@@ -114,13 +117,16 @@ where ever
               </li>
             </ul>
           </li>
+        <div className="mt-16">
+          <img src={Son1} alt="" />
+        </div>
         </ul>
       </div>
     </div>
     <div className="footer-bottom">
       <div className="container">
         <p className="copyright">
-          © 2023 PCS USEN | All Rights Reserved by <a href="*" className="copyright-link">Usen's Agency</a>
+          © 2023 MAKERS DIGITAL PRO | All Rights Reserved by <a href="*" className="copyright-link">MAKERS DIGITAL PRO's Agency</a>
         </p>
         <ul className="footer-bottom-list">
           <li>

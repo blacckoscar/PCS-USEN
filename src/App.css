@@ -286,7 +286,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 1000;
 }
 
 .header.active {
@@ -380,10 +380,12 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: var(--mint-cream);
+  /* background-color: var(--mint-cream); */
   padding-block-start: calc(var(--section-padding) + 50px);
   text-align: center;
   overflow: hidden;
+  z-index: 100;
+  position: relative;
 }
 
 .hero .container {
@@ -408,7 +410,9 @@ body {
   background-color: var(--go-green);
 }
 
-.hero-title { margin-block: 10px 15px; }
+.hero-title { margin-block: 10px 15px; 
+  font-weight: bolder;
+}
 
 .hero-text { color: var(--rich-black-fogra-29-1); }
 

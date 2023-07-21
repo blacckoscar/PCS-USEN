@@ -104,9 +104,7 @@ useEffect(() => {
 }}>
       {/* <a href="/" className="logo">PCS USEN</a> */}
       <Link to="/" className="logo">
-            <img src={Son} alt='pcs'
-             className='h-32 w-60' 
-             />
+            <img src={Son} alt='pcs' className='h-24 w-44' />
             {/* PCS USEN */}
           </Link>
 
@@ -144,10 +142,10 @@ useEffect(() => {
           </li>
         </ul>
       </nav>
-      <button className="">
+      <button className="ml-0">
       <AiOutlineMenu onClick={handleNav2} size={35} color='black' className='lg:hidden'/>
       </button>
-    <Google />
+    <Google title={'Sign In'}/>
       {/* <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Sign In</button> */}
       {/* <div className="overlay" data-nav-toggler data-overlay /> */}
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useCart } from "react-use-cart";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import PaystackForm from "./PaystackForm";
@@ -8,17 +8,22 @@ import Nav from "../component/Nav";
 import Homes from "./Homes";
 import MobileNav from "./MobileNav";
 import { Link, useNavigate } from "react-router-dom";
-
+import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
+import { FaArrowCircleDown } from "react-icons/fa";
+import Google from "./Google";
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  // Your Firebase config
-  apiKey: "AIzaSyCRSVN6rIpkPQKLz77NFcES36Fpe665T9k",
-  authDomain: "nextberries-cb5b9.firebaseapp.com",
-  projectId: "nextberries-cb5b9",
-  storageBucket: "nextberries-cb5b9.appspot.com",
-  messagingSenderId: "44749615279",
-  appId: "1:44749615279:web:0b3e110f248c8e8b3ae45a",
-  measurementId: "G-9QZ27VRVHL",
+  apiKey: "AIzaSyAvfSZiORsVohwIB696oyJYwxBcuh-jRRY",
+  authDomain: "markers-digital-pro.firebaseapp.com",
+  projectId: "markers-digital-pro",
+  storageBucket: "markers-digital-pro.appspot.com",
+  messagingSenderId: "99311584893",
+  appId: "1:99311584893:web:63167d001bb5c569f31314",
+  measurementId: "G-H43QCYF1XV"
 };
+
+
 
 firebase.initializeApp(firebaseConfig);
 
@@ -131,10 +136,28 @@ const Cart = () => {
     }); 
    };
 
+   const [user, setUser] = useState(null);
+
+
+  useEffect(() => {
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+
+    return () => unsubscribe(); // Cleanup the event listener on unmount
+  }, []);
+
+
+  const sm1 = require("../Assets/00.jpg")
 
   return (
-    <div className=" p-10 pt-20 bg-gray-500">
-      <h1 className="text-white text-6xl text-center m-5">
+    <div className=" p-10 pt-20 bg-[#f5fffc]">
+      <h1 className="text-blue-950 font-extrabold text-6xl text-center m-20">
+        
         Cart
       </h1>
       <h1 className="text-light">{isEmpty ? "Your Cart is Empty" : ""}</h1>
@@ -144,18 +167,19 @@ const Cart = () => {
           striped
           bordered
           hover
-          className="mb-5 border-2 border-white rounded-md p-2"
+          className="mb-5 border-2 border-gray-600 flex rounded-md p-2 items-center justify-center text-center"
         >
           <tbody>
             {items.map((item, index) => {
               return (
                 <tr
                   key={index}
-                  className="md:inline justify-center text-center grid grid-rows-1"
+                  className='w-auto m-20 cursor-pointer bg-white text-center shadow-2xl self-center flex grid-cols p-10 rounded-2xl'
+                  // className="md:inline justify-center text-center w-[100%]"
                 >
                   <td>
                     <div
-                      className="rounded-lg ml-6  md:flex flex-col text-center justify-center mb-10 drop-shadow-2xl shadow-2xl"
+                      className="rounded-lg ml-6  md:flex flex-col text-center justify-center mb-0 drop-shadow-2xl shadow-2xl"
                       style={{
                         background: "white",
                         height: "8rem",
@@ -164,77 +188,75 @@ const Cart = () => {
                         alignItems: "center",
                       }}
                     >
-                      <div className="p-2 text-center rounded-md">
+                      <div className="p-0 text-center rounded-md">
                         <img
-                          src={item.product_image}
-                          className="w-32 p-10 ml-3 md:ml-0 text-center shadow-2xl drop-shadow-2xl hover:scale-110 duration-500"
+                          // src={'../Assets/21.jpg'}
+                          src={sm1}
+                          // src={item.image}
+                          className="w-48  p-3  text-center shadow-2xl drop-shadow-2xl hover:scale-110 duration-500"
                           alt={item.title}
                         />
                       </div>
                     </div>
                   </td>
-                  <td>
-                    <h6 className="md:pl-10 pr-10 text-gray-300">
-                      {item.title}
-                    </h6>
-                  </td>
-                  <td className="text-green-500 pr-10">$ {item.price}</td>
+                    <div className="p-10 items-center justify-center flex-col flex font-extrabold text-gray-800">
+                      <p>
+                        {item.name}
+                        </p>
+                  <td className="text-green-500 p-0">${item.price} USD Each</td>
+                    </div>
 
-                  <td className="text-gray-300">Quantity ({item.quantity})</td>
-                  <td>
+                  <div className="flex items-center justify-center">
                     <button
                       onClick={() =>
                         updateItemQuantity(item.id, item.quantity - 1)
                       }
-                      className="text-4xl m-4 bg-white rounded-full duration-500 drop-shadow-2xl shadow-2xl hover:bg-red-600 hover:text-white w-10 text-red-600"
+                      className="text-4xl p-5 m-4 bg-white rounded-full duration-500 drop-shadow-2xl shadow-2xl hover:bg-red-600 hover:text-white w-20 text-red-600"
                     >
                       -
                     </button>
+                    <p className="w-20 bg-white shadow-2xl drop-shadow-2xl rounded-full p-5">
+                      {item.quantity}
+                      </p>
                     <button
                       onClick={() =>
                         updateItemQuantity(item.id, item.quantity + 1)
                       }
-                      className="text-4xl m-4 w-10 bg-white rounded-full drop-shadow-2xl shadow-2xl hover:bg-green-600 hover:text-white duration-500  text-green-600"
+                      className="text-4xl m-4 p-5 w-20 bg-white rounded-full drop-shadow-2xl shadow-2xl hover:bg-green-600 hover:text-white duration-500  text-green-600"
                     >
                       +
-                    </button>{" "}
-                    <br className="md:hidden" />
+                    </button>
+                  </div>
                     <button
                       variant="danger"
                       onClick={() => removeItem(item.id)}
-                      className="ms-2 text-red-600 font-bold bg-white rounded-lg hover:text-white hover:bg-red-600 duration-500 p-1"
+                      className=" text-red-600 font-bold bg-white rounded-lg hover:text-white hover:bg-red-600 duration-500 w-80 h-20 m-5 self-center"
                     >
                       Remove Item
                     </button>
-                  </td>
-                  <td className="text-yellow-500 font-extralight md:ml-5 mt-5 pl-5">
-                    shipping fee: Free Shipping
-                    {/* {item.shipping_fee} */}
-                  </td>
                 </tr>
               );
             })}
           </tbody>
         </div>
+
+
+
         {!isEmpty && (
           <div
             // style={{ }}
-            className="bg-light-black text-light"
+            className="bg-light-black text-light p-10 md:flex items-center justify-center"
           >
-            <h1 className="py-2 text-green-600 ml-8 font-bold">
-              <h4>Total Price: $. {cartTotal}</h4>
-            </h1>
-            <div className="p-2" md={4}>
+            <div className="p-2 flex" md={4}>
               <button
                 variant="danger"
-                className="m-2 text-red-600 font-bold text-center border-2 border-red-500 p-1 hover:bg-red-500 hover:text-white duration-500 rounded-lg"
+                className="m-2 flex font-bold  text-center items-center hover:text-red-500 hover:bg-white drop-shadow-2xl shadow-2xl border-2 border-red-500 p-10 bg-red-500 text-white duration-500 rounded-lg"
                 onClick={() => emptyCart()}
               >
-                <MdOutlineShoppingCart size="1.7rem" className="ml-8" />
-                Clear Cart
+                <MdOutlineShoppingCart size="1.7rem" className="mr-2" />  Clear Cart
               </button>
 
-              <button
+              {/* <button
                 variant="success"
               >
                 <PaystackForm
@@ -245,10 +267,67 @@ const Cart = () => {
                   onClose={handlePaymentClose}
                   handleOrderAttempts={handleOrderAttempts}
                 />
-              </button>
+              </button> */}
             </div>
+            <h1 className=" bg-white p-10 rounded-lg  drop-shadow-2xl shadow-2xl m-2 text-green-600 ml-8 font-bold">
+              <h4>Total Price: ${cartTotal} USD</h4>
+            </h1>
           </div>
         )}
+        {
+  user ? 
+<div
+            // style={{ }}
+            className=" w-[100%] grid items-center justify-center"
+          >
+<p 
+      className=" text-center items-center flex font-bold pb-10 self-center justify-center text-gray-600 "
+      // onClick={handleNav} 
+      >
+       Pay With <FaArrowCircleDown size="1.7rem" className="ml-2" />
+      </p>
+
+            <PayPalScriptProvider
+        // options={{ "client-id": import.meta.env.VITE_CLIENT_ID }}
+      >
+        <PayPalButtons
+        //   createOrder={(data, actions) => {
+        //     return actions.order.create({
+        //       purchase_units: [
+        //         {
+        //           amount: {
+        //             value: "13.99",
+        //           },
+        //         },
+        //       ],
+        //     });
+        //   }}
+        //   onApprove={async (data, actions) => {
+        //     const details = await actions.order.capture();
+        //     const name = details.payer.name.given_name;
+        //     alert("Transaction completed by " + name);
+        //   }}
+        />
+      </PayPalScriptProvider>
+      </div>
+      :
+      <div
+            // style={{ }}
+            className=" w-[100%] grid items-center justify-center"
+          >
+      <button 
+      className="m-2 border-2 border-green-500 hover:text-green-500 hover:bg-white text-center items-center flex font-bold p-10 drop-shadow-2xl shadow-2xl bg-green-500 text-white rounded-lg"
+      // onClick={handleNav} 
+      >
+                        <MdOutlineShoppingCart size="1.7rem" className="mr-2" />
+       
+       <Google title={'Pay Now'}/>
+      </button>
+      </div>
+}
+
+
+
       </div>
          {/* <div className="bg-gray-900">
           <Homes />
