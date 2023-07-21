@@ -48,24 +48,24 @@ const FeedbackCard = ({
 const Feedbacks = () => {
   return (
     <div 
-    style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
+    // style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
     className="w-screen pb-40"
     // className={`mt-12 bg-black-100 rounded-[20px]`}
     >
       <div
-        className={`bg-tertiary text-gray-400 rounded-2xl px-20 p-10`}
+        className={`bg-tertiary text-gray-400 rounded-2xl px-20 md:p-10`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText} >What others say</p>
           {/* <h2 className={styles.sectionHeadText} */}
-          <h1 className='font-bold text-8xl text-white m-0 pt-10'
+          <h1 className='font-bold md:text-8xl text-6xl text-white m-0 pt-10'
 
 
           >Testimonials.</h1>
         </motion.div>
       </div>
       {/* <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}> */}
-      <div className='px-20 flex justify-center items-center flex-col-3 gap-2'>
+      <div className='px-20 md:flex justify-center items-center flex-col-3 gap-2'>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}

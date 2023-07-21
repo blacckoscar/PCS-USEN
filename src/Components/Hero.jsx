@@ -119,13 +119,38 @@ const Hero = () => {
   return (
     <header>
     <div>
+
+      <div className='md:'>
+
     <div
       // style={{width: '100%'}}
-      className=" h-40 sm:h-auto"
+      // className=" h-40 sm:h-auto"
+      dangerouslySetInnerHTML={{
+        __html: `<video  style="
+        position: absolute;
+        width: 100%;
+        // top: -80px;
+        // height: 100%;
+        object-fit: cover;
+        z-index: -1;" 
+        autoplay loop muted playsinline>
+        <source src=${HeroVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>`
+    }}
+    />
+        </div>
+
+    <div className='hidden md:flex'>
+
+    <div
+      // style={{width: '100%'}}
+      // className=" h-40 sm:h-auto md:hidden flex"
         dangerouslySetInnerHTML={{
       __html: `<video  style="
       position: absolute;
       width: 100%;
+      bottom: 0px;
       // top: -80px;
       // height: 100%;
       object-fit: cover;
@@ -136,13 +161,15 @@ const Hero = () => {
       </video>`
     }}
     />
+    </div>
+
           <div>
             <section>
               {/* 
           - *HERO
         */}
               <div className="section hero" id="home" aria-label="hero">
-                <div className="container">
+                <div className="container md:mt-0 mt-48">
                   <div className="hero-content">
                     <p className="hero-subtitle has-before">Wellcome to Our Agency</p>
                     <h1 className="h1 hero-title">Your Brand Is Our Priority</h1>
@@ -169,7 +196,7 @@ const Hero = () => {
               {/* Services */}
                  {/* my part */}
                  <div className='xl:flex grid lg:grid-cols-2 justify-center relative gap-10 md:pt-40 pt-20, pb-20 bg-[#f5fffc] p-10'>
-                <h1 className='w-[80%] absolute hidden xl:inline bg-[#28af60] h-3 top-[45%]'> </h1>
+                <h1 className='w-[80%] absolute hidden xl:inline bg-[#28af60] h-3 top-[55%]'> </h1>
                 <Link to={'/services'} className='bg-white text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] h-96'>
                   <div>
                     <img src={card} alt="" className='mt-5'/>
@@ -263,7 +290,7 @@ const Hero = () => {
                           <p className="card-text">
                           Makers Digital Pro's UI/UX unit weaves intuitive interfaces, stunning visuals, and seamless interactions into a delightful digital tapestry, elevating user experiences to new heights of satisfaction and delight.
                           </p>
-                          <a href="*" className="btn-link">
+                          <a href="/services" className="btn-link">
                             <span className="span">Read More</span>
                             <ion-icon name="arrow-forward-outline" aria-hidden="true" />
                           </a>
@@ -280,7 +307,7 @@ const Hero = () => {
                           <p className="card-text">
                           Makers Digital Pro's app development unit creates enchanting mobile experiences, blending flawless functionality, stunning design, and intuitive interfaces that bring ideas to life, captivating users with every tap.
                           </p>
-                          <a href="*" className="btn-link">
+                          <a href="/services" className="btn-link">
                             <span className="span">Read More</span>
                             <ion-icon name="arrow-forward-outline" aria-hidden="true" />
                           </a>
@@ -297,7 +324,7 @@ const Hero = () => {
                           <p className="card-text">
                           Makers Digital Pro's Professional Content Writer unit weaves words into captivating narratives, crafting compelling stories that engage, inform, and inspire, leaving a lasting impression on readers with every written masterpiece.
                           </p>
-                          <a href="*" className="btn-link">
+                          <a href="/services" className="btn-link">
                             <span className="span">Read More</span>
                             <ion-icon name="arrow-forward-outline" aria-hidden="true" />
                           </a>
@@ -314,7 +341,7 @@ const Hero = () => {
                           <p className="card-text">
                           Makers Digital Pro's Graphics Design unit crafts visual wonders, blending creativity and precision to produce stunning artwork that elevates brands and leaves a lasting visual impact on audiences.
                           </p>
-                          <a href="*" className="btn-link">
+                          <a href="/services" className="btn-link">
                             <span className="span">Read More</span>
                             <ion-icon name="arrow-forward-outline" aria-hidden="true" />
                           </a>
@@ -322,7 +349,7 @@ const Hero = () => {
                       </div>
                     </li>
                   </ul>
-                  <a href="*" className="btn btn-primary">Get Started</a>
+                  {/* <a href="/pricing" className="btn btn-primary">Get Started</a> */}
                 </div>
               </section>
               {/* 

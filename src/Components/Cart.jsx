@@ -11,6 +11,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { FaArrowCircleDown } from "react-icons/fa";
 import Google from "./Google";
+import Son from "../Assets/sabe.jpg";
+
+
+
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -155,7 +159,10 @@ const Cart = () => {
   const sm1 = require("../Assets/00.jpg")
 
   return (
-    <div className=" p-10 pt-20 bg-[#f5fffc]">
+    <div className=" p-10 pt-20 bg-[#f5fffc]"
+    style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
+
+    >
       <h1 className="text-blue-950 font-extrabold text-6xl text-center m-20">
         
         Cart
@@ -174,7 +181,7 @@ const Cart = () => {
               return (
                 <tr
                   key={index}
-                  className='w-auto m-20 cursor-pointer bg-white text-center shadow-2xl self-center flex grid-cols p-10 rounded-2xl'
+                  className='w-auto m-20 cursor-pointer bg-white text-center shadow-2xl self-center lg:flex grid grid-cols p-10 rounded-2xl'
                   // className="md:inline justify-center text-center w-[100%]"
                 >
                   <td>
@@ -245,16 +252,16 @@ const Cart = () => {
         {!isEmpty && (
           <div
             // style={{ }}
-            className="bg-light-black text-light p-10 md:flex items-center justify-center"
+            className="bg-light-black text-light p-10 md:flex grid items-center justify-center"
           >
-            <div className="p-2 flex" md={4}>
-              <button
+            <div className="p-2 md:flex" md={4}>
+              <div
                 variant="danger"
-                className="m-2 flex font-bold  text-center items-center hover:text-red-500 hover:bg-white drop-shadow-2xl shadow-2xl border-2 border-red-500 p-10 bg-red-500 text-white duration-500 rounded-lg"
+                className="m-2 flex font-bold  text-center justify-center items-center hover:text-red-500 hover:bg-white drop-shadow-2xl shadow-2xl border-2 border-red-500 p-10 bg-red-500 text-white duration-500 rounded-lg"
                 onClick={() => emptyCart()}
               >
                 <MdOutlineShoppingCart size="1.7rem" className="mr-2" />  Clear Cart
-              </button>
+              </div>
 
               {/* <button
                 variant="success"
@@ -269,7 +276,7 @@ const Cart = () => {
                 />
               </button> */}
             </div>
-            <h1 className=" bg-white p-10 rounded-lg  drop-shadow-2xl shadow-2xl m-2 text-green-600 ml-8 font-bold">
+            <h1 className=" bg-white p-10 rounded-lg  drop-shadow-2xl shadow-2xl m-2 text-green-600 lg:ml-8 font-bold">
               <h4>Total Price: ${cartTotal} USD</h4>
             </h1>
           </div>
@@ -315,14 +322,14 @@ const Cart = () => {
             // style={{ }}
             className=" w-[100%] grid items-center justify-center"
           >
-      <button 
-      className="m-2 border-2 border-green-500 hover:text-green-500 hover:bg-white text-center items-center flex font-bold p-10 drop-shadow-2xl shadow-2xl bg-green-500 text-white rounded-lg"
+      {/* <div
+      className="m-2 border-2 border-green-500 hover:text-green-500 hover:bg-white text-center items-center flex font-bold p-10 drop-shadow-2xl shadow-2xl text-white rounded-lg"
       // onClick={handleNav} 
-      >
-                        <MdOutlineShoppingCart size="1.7rem" className="mr-2" />
+      > */}
+                        {/* <MdOutlineShoppingCart size="1.7rem" className="mr-2" /> */}
        
        <Google title={'Pay Now'}/>
-      </button>
+      {/* </div> */}
       </div>
 }
 

@@ -137,7 +137,7 @@ function Google({title}) {
     >
 
 { user ?
-    <div className="cursor-pointer">
+    <div className="cursor-pointer z-50">
 
     {/* <FaUserCog color="white" size={25} onClick={handleNav} /> */}
     <p onClick={handleNav} >
@@ -152,7 +152,7 @@ function Google({title}) {
     </div>
 
     :
-          <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>{title}</button>
+          <div className="border-green-600 border-2 text-[#28af60] font-bold p-3 rounded-lg w-40 text-center cursor-pointer" style={{zIndex: 100}} onClick={handleNav}>{title}</div>
 
   //   <div className="font-bold text-lg cursor-pointer border-white z-50 border-2 " onClick={handleNav} >
   //   <p className=" px-6 py-1 ">
@@ -168,13 +168,13 @@ function Google({title}) {
 
     style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
       className={
-        !nav ? 'fixed right-0 top-0 w-[40%] h-[100%] p-5 overflow-hidden border-green-500 border-[1px] ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex fixed right-[-1000%]'
+        !nav ? 'fixed right-0 top-0 md:w-[40%] w-[100%] h-[100%] p-5 overflow-hidden border-green-500 border-[1px] ease-in-out duration-1000 drop-shadow-2xl':'hidden md:flex'
         // !nav
         //   ? "hidden md:flex w-[27%] fixed items-center right-10 text-black bg-white rounded-md md:mt-5 mt-10 shadow-2xl drop-shadow-2xl p-10"
         //   : "null"
       }
     >
-                <button className="btn-outline" style={{zIndex: 100}} onClick={handleNav}>Close</button>
+          <div className="border-green-600 border-2 text-[#28af60] font-bold p-3 z-50 rounded-lg w-40 text-center cursor-pointer" style={{zIndex: 100}} onClick={handleNav}>{'Back'}</div>
 
       {user ? (
         <div className="text-center flex items-center gap-2 m-20 flex-col justify-center">
@@ -198,9 +198,9 @@ function Google({title}) {
         <>
           <div className="p-5 items-center justify-center flex-col mt-48  flex font-extrabold text-gray-800">
         
-                  <td className="text-green-50 p-0">To Help You Proceed In Getting Our Services</td>
+                  <td className="text-green-50 p-0">To Help You Proceed In Getting Our Services Please</td>
                     </div>
-        <div onClick={handleSignIn} className="flex-row flex text-center mx-20 items-center justify-center bg-slate-200 z-50 border-2 ">
+        <div onClick={handleSignIn} className="flex-row flex cursor-pointer text-center mx-20 items-center justify-center z-50 border-2 ">
           <p className="px-6 py-1 flex-row flex items-center" >
           <FcGoogle size={40} />  
             Sign In with Google

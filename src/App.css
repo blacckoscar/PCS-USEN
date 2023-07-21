@@ -385,7 +385,7 @@ body {
   text-align: center;
   overflow: hidden;
   z-index: 100;
-  position: relative;
+  /* position: relative; */
 }
 
 .hero .container {

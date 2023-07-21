@@ -75,7 +75,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <div 
-    style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
+    // style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
     className="w-screen pb-40"
     >
       <motion.div 
@@ -100,7 +100,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex justify-center items-center flex-col-3 gap-2'>
+      <div className='mt-20 lg:flex justify-center items-center flex-col-3 gap-2'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

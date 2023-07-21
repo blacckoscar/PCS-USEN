@@ -98,13 +98,13 @@ useEffect(() => {
 
   return (
     <header className="header" data-header>
-    <div className="container" style={{
+    <div className="container z-50" style={{
 // backgroundColor: navbarColor,
 // boxShadow: navbarShadow ? '0 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
 }}>
       {/* <a href="/" className="logo">PCS USEN</a> */}
       <Link to="/" className="logo">
-            <img src={Son} alt='pcs' className='h-24 w-44' />
+            <img src={Son} alt='pcs' className='h-24 w-40' />
             {/* PCS USEN */}
           </Link>
 
@@ -115,10 +115,18 @@ useEffect(() => {
             <AiOutlineClose onClick={handleNav2} size={30} color='black' className='ml-72 z-50'/>
           </button>
         </div> */}
+        <div className='mb-10 md:hidden'>
+
+        <Link to="/" className="logo">
+            <img src={Son} alt='pcs' className='h-24 w-40' />
+            {/* PCS USEN */}
+          </Link>
+          <AiFillCloseCircle size={27} color='' onClick={handleNav2} className="ml-72 absolute top-16 lg:hidden"/>
+        </div>
+
         <ul
-         className="navbar-list z-50 "
+         className="navbar-list z-50 md:ml-44"
          >
-                    <AiFillCloseCircle size={27} color='' onClick={handleNav2} className="ml-72 lg:hidden"/>
           <li >
             <Link to={"/"} className="navbar-link" style={{fontWeight: "bolder", fontSize: 20, }}>Home</Link>
           </li>
@@ -142,7 +150,7 @@ useEffect(() => {
           </li>
         </ul>
       </nav>
-      <button className="ml-0">
+      <button className="md:ml-0 ml-44">
       <AiOutlineMenu onClick={handleNav2} size={35} color='black' className='lg:hidden'/>
       </button>
     <Google title={'Sign In'}/>

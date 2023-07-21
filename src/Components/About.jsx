@@ -1,18 +1,27 @@
 import React from 'react'
 import svg from "../Assets/who-we-are-img.gif"
 import {FaPlusCircle} from "react-icons/fa"
+import Son from "../Assets/sabe.jpg";
+
 
 const About = () => {
   return (
-    <div className='md:mt-20 -mt-20 text-center  section hero" id="home" aria-label="hero'>
+    <div className='md:mt-40 -mt-20 p-10 text-center  section hero" id="home" aria-label="hero'
+    style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
+    >
         <div className='mt-10'>
-            <h1 className='font-bold text-7xl text-blue-950 mt-0'>About Makers Digital Pro</h1>
+            <h1 className='font-bold text-7xl text-blue-950 md:mt-0 mt-32'>About Makers Digital Pro</h1>
         </div>
-        <div className='lg:flex justify-evenly p-2 mt-36 md:mt-64'>
+
+        <div className='lg:flex justify-evenly p-2 mt-20 md:mt-32'>
             <div>
-            <img src={svg} alt="" className='w-[700px]'/>
+            <img
+            //  src={Son1} 
+             src={svg} 
+            alt="" />
             </div>
-            <div className='md:w-[600px] w-[370px] text-start mt-20 md:mt-8 p-1'>
+            
+            <div className='md:w-[600px] w-[300px] text-start mt-20 md:mt-8 p-1'>
                 <h3 className='font-bold md:text-5xl text-4xl mt-3 text-blue-900'>WHO WE ARE</h3>
                 <p className='md:text-7xl text-5xl font-bold mt-10 text-gray-900'>Intelligent & Creative</p>
                 <p className='text-start mt-14'>

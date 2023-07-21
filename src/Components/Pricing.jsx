@@ -29,7 +29,7 @@ export default function Pricing() {
     <div 
     style={{backgroundImage: `url(${Son1})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
 
-    className='mt-44 text-center'>
+    className='mt-44 p-20 text-center'>
             <>
          {/* <h1 className='font-bold md:text-6xl text-4xl text-blue-950 mb-10
         '>Our Pricing</h1> */}
@@ -49,7 +49,7 @@ export default function Pricing() {
             {/* <h1 className='font-bold text-5xl'>Pro Services</h1> */}
             {
                 Data.map((item, index) => (
-                    <div key={index} className='w-auto m-10 cursor-pointer bg-white text-center shadow-2xl grid grid-cols-2 p-20 pb-28 rounded-2xl'>
+                    <div key={index} className='w-auto m-10 cursor-pointer bg-white text-center shadow-2xl md:grid grid-cols-2 p-20 pb-28 rounded-2xl'>
                 <div>
                 <section  className='bg-[#28af60] text-white p-10 shadow-2xl rounded-2xl'>
 
@@ -84,11 +84,14 @@ export default function Pricing() {
                 </ul>
                 </div>
 
+                <div>
+
+
                 <img src={item.image} alt="" className=" self-center p-20" />
 
                 <section 
                onClick={() => handleAddToCart(item.name, item.price, item.amount, item.image, item.id)}
-                className='bg-[#28af60] w-[100%] h-[130%] shadow-2xl justify-center flex drop-shadow-2xl rounded-2xl p-3 pt-6 text-white  cursor-pointer'>
+                className='bg-[#28af60] w-[100%] md:h-[14%] h-[10%] shadow-2xl justify-center flex drop-shadow-2xl rounded-2xl p-3 pt-6 text-white  cursor-pointer'>
                 {/* <h1 className='font-bold text-6xl'>Pixel</h1> */}
                 
                 <MdOutlineAddShoppingCart
@@ -98,6 +101,7 @@ export default function Pricing() {
           />
                 <h4 className='font-bold text-lg'> Add To Cart</h4>
                 </section>
+            </div>
             </div>
           ))  }
         </div>
