@@ -145,14 +145,14 @@ function Google({title}) {
     <img
             src={user.photoURL}
             alt={user.displayName}
-            className="rounded-full h-20 w-20 border-green-600 border-2 "
+            className="rounded-full h-20 w-20  drop-shadow-2xl shadow-2xl"
             />
             </p>
     {/* <i className="hidden md:flex w-2 h-2 top-5 right-8 bg-red-600 rounded-full absolute"></i> */}
     </div>
 
     :
-          <div className="border-green-600 border-2 text-[#28af60] font-bold p-3 rounded-lg w-40 text-center cursor-pointer" style={{zIndex: 100}} onClick={handleNav}>{title}</div>
+          <div className=" text-[#28af60] drop-shadow-2xl shadow-2xl bg-slate-200 font-bold p-3 rounded-lg w-40 text-center cursor-pointer" style={{zIndex: 100}} onClick={handleNav}>{title}</div>
 
   //   <div className="font-bold text-lg cursor-pointer border-white z-50 border-2 " onClick={handleNav} >
   //   <p className=" px-6 py-1 ">
@@ -174,7 +174,7 @@ function Google({title}) {
         //   : "null"
       }
     >
-          <div className="border-green-600 border-2 text-[#28af60] font-bold p-3 z-50 rounded-lg w-40 text-center cursor-pointer" style={{zIndex: 100}} onClick={handleNav}>{'Back'}</div>
+          <div className="bg-slate-200 text-[#28af60] drop-shadow-2xl shadow-2xl font-bold p-3 z-50 rounded-lg w-40 text-center cursor-pointer" style={{zIndex: 100}} onClick={handleNav}>{'Back'}</div>
 
       {user ? (
         <div className="text-center flex items-center gap-2 m-20 flex-col justify-center">
@@ -200,7 +200,7 @@ function Google({title}) {
         
                   <td className="text-green-50 p-0">To Help You Proceed In Getting Our Services Please</td>
                     </div>
-        <div onClick={handleSignIn} className="flex-row flex cursor-pointer text-center mx-20 items-center justify-center z-50 border-2 ">
+        <div onClick={handleSignIn} className="flex-row flex cursor-pointer rounded-lg text-center mx-20 items-center drop-shadow-2xl shadow-2xl justify-center bg-slate-200 z-50 border-2 ">
           <p className="px-6 py-1 flex-row flex items-center" >
           <FcGoogle size={40} />  
             Sign In with Google
@@ -224,52 +224,6 @@ function Google({title}) {
 
     {/* Mobile Logins */}
 
-    {
-         !nav ?
-    <div
-      className={
-        !nav
-          ? "md:hidden absolute items-center text-black bg-white rounded-md md:mt-5 mt-10 shadow-2xl drop-shadow-2xl p-10"
-          : "null"
-      }
-    >
-      {user ? (
-        <div className="text-center gap-10 flex-row justify-center">
-          <img
-            src={user.photoURL}
-            alt={user.displayName}
-            className="rounded-full ml-10 mb-3"
-          />
-          <p>{user.email}</p>
-          <p>Welcome, {user.displayName}!</p>
-          <button
-            onClick={handleSignOut}
-            className=" bg-slate-200 z-50 border-2 p-1 rounded-lg"
-          >
-                      <p className="px-6 py-1 flex-row flex items-center" >
-            Sign Out
-            </p>
-          </button>
-        </div>
-      ) : (
-        <button onClick={handleSignIn} className="flex-row flex text-center bg-slate-200 z-50 border-2 ">
-          <p className="px-6 py-1 flex-row flex items-center" >
-          <FcGoogle size={40} />  
-            Sign In with Google
-            </p>
-        </button>
-      )}
-      {/* <Link
-        to={"/shop"}
-        className="ml-24 mt-10 rounded-lg border-2 border-green-500 p-1 "
-      >
-        Visit Shop
-      </Link> */}
-    </div>
-    :
-    null
-
-    }
   </div>
     )
 }

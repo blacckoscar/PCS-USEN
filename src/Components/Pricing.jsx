@@ -29,7 +29,7 @@ export default function Pricing() {
     <div 
     style={{backgroundImage: `url(${Son1})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
 
-    className='mt-44 p-20 text-center'>
+    className='mt-56 p-20 text-center'>
             <>
          {/* <h1 className='font-bold md:text-6xl text-4xl text-blue-950 mb-10
         '>Our Pricing</h1> */}

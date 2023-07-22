@@ -2,6 +2,13 @@ import { FaPlus } from "react-icons/fa";
 const mkt = require("../Assets/srvc-icon3.png")
 const sm  =require("../Assets/21.jpg")
 const sm1 = require("../Assets/22.jpg")
+const s30  =require("../Assets/30.jpg")
+const s40 = require("../Assets/40.jpg")
+const s50  =require("../Assets/50.jpg")
+const s60 = require("../Assets/60.jpg")
+const s80 = require("../Assets/80.jpg")
+const s70  =require("../Assets/70.jpg")
+const s701 = require("../Assets/701.jpg")
 const mobileApp = require("../img/Instagram-ios.png")
 const vid = require("../img/vid.png")
 const graph = require("../img/graphics.jpg")
@@ -64,7 +71,7 @@ export const Data = [
         item3: "Professional Content",
         item4: "",
         item5: "",
-        image : bsw,
+        image : s40,
         id: 1,
     },
     {
@@ -77,7 +84,7 @@ export const Data = [
         item3: "Professional Content",
         item4: "Customized E Commerce System",
         item5: "Basic Admin Dashboard",
-        image : mkt,
+        image : s40,
         id: 2,
     },
     {
@@ -90,7 +97,7 @@ export const Data = [
         item3: "Professional Content",
         item4: "Customized E Commerce System",
         item5: "Advanced Admin Dashboard",
-        image : mkt,
+        image : s40,
         id:3,
     },
     {
@@ -103,7 +110,7 @@ export const Data = [
         item3: "Professional Content",
         item4: "",
         item5: "",
-        image : afl,
+        image : s40,
         id: 4,
     },
     {
@@ -116,7 +123,7 @@ export const Data = [
         item3: "",
         item4: "",
         item5: "",
-        image : graph,
+        image : s30,
         id:5,
     },
     {
@@ -129,7 +136,7 @@ export const Data = [
         item3: "",
         item4: "",
         item5: "",
-        image : vid,
+        image : s50,
         id: 6,
     },
     {
@@ -142,7 +149,7 @@ export const Data = [
         item3: "",
         item4: "",
         item5: "",
-        image : mkt,
+        image : s70,
         id: 7,
     },
    
@@ -156,7 +163,7 @@ export const Data = [
         item3: "3 Business Cards",
         item4: "",
         item5: "",
-        image : mkt,
+        image : s701,
         id: 9,
     },
     {
@@ -169,7 +176,7 @@ export const Data = [
         item3: "",
         item4: "",
         item5: "",
-        image : pxl,
+        image : s60,
         id: 11,
         
     },
@@ -179,7 +186,7 @@ export const Data = [
 
 export const Service = [
     {
-        Image: card,
+        Image: s40,
 
         id:1,
         title: "Website Design",
@@ -188,7 +195,7 @@ export const Service = [
     },
 
     {
-        Image: card1,
+        Image: s60,
         id:2,
 
         title: "Mobile App",
@@ -197,7 +204,7 @@ export const Service = [
     },
 
     {
-        Image: card2,
+        Image: s50,
         id:3,
 
         title: "Digital Marketing",
@@ -206,7 +213,7 @@ export const Service = [
     },
 
     {
-        Image: card,
+        Image: sm1,
         id:4,
 
         title: "SEO and SMO",
@@ -218,7 +225,7 @@ export const Service = [
 export const save = [
     
     {
-        Image: card,
+        Image: s30,
 
         id:5,
         title: "Graphic Design",
@@ -227,7 +234,7 @@ export const save = [
     },
 
     {
-        Image: card1,
+        Image: s50,
         id:6,
 
         title: "Video Editing",
@@ -236,7 +243,7 @@ export const save = [
     },
 
     {
-        Image: card2,
+        Image: s80,
         id:7,
 
         title: "Lead Generation",
@@ -245,10 +252,10 @@ export const save = [
     },
 
     {
-        Image: card3,
+        Image: s701,
         id:8,
 
-        title: "Logo Design",
+        title: "Social Media Marketing",
 
         content: "Email Campaigns & Marketing: Email marketing remains a powerful tool for nurturing customer relationships and driving conversions. We design and execute effective email marketing campaigns, including targeted email newsletters, promotional offers, drip campaigns, and customer retention strategies. We focus on crafting personalized, engaging content and optimizing email deliverability to ensure your messages reach the right audience at the right time."
     },

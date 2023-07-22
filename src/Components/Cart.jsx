@@ -11,7 +11,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { FaArrowCircleDown } from "react-icons/fa";
 import Google from "./Google";
-import Son from "../Assets/sabe.jpg";
+import Son from "../Assets/12.jpg";
 
 
 
@@ -159,11 +159,11 @@ const Cart = () => {
   const sm1 = require("../Assets/00.jpg")
 
   return (
-    <div className=" p-10 pt-20 bg-[#f5fffc]"
+    <div className=" p-10 mt-56 bg-[#f5fffc]"
     style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
 
     >
-      <h1 className="text-blue-950 font-extrabold text-6xl text-center m-20">
+      <h1 className="text-blue-50 font-extrabold text-6xl text-center m-20">
         
         Cart
       </h1>
@@ -257,7 +257,7 @@ const Cart = () => {
             <div className="p-2 md:flex" md={4}>
               <div
                 variant="danger"
-                className="m-2 flex font-bold  text-center justify-center items-center hover:text-red-500 hover:bg-white drop-shadow-2xl shadow-2xl border-2 border-red-500 p-10 bg-red-500 text-white duration-500 rounded-lg"
+                className="m-2 flex font-bold cursor-pointer text-center justify-center items-center hover:text-red-500 hover:bg-white drop-shadow-2xl shadow-2xl border-2 border-red-500 p-10 bg-red-500 text-white duration-500 rounded-lg"
                 onClick={() => emptyCart()}
               >
                 <MdOutlineShoppingCart size="1.7rem" className="mr-2" />  Clear Cart

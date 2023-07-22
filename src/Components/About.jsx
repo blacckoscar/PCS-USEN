@@ -6,7 +6,7 @@ import Son from "../Assets/sabe.jpg";
 
 const About = () => {
   return (
-    <div className='md:mt-40 -mt-20 p-10 text-center  section hero" id="home" aria-label="hero'
+    <div className='lg:mt-56 -mt-20 p-10 text-center  section hero" id="home" aria-label="hero'
     style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
     >
         <div className='mt-10'>

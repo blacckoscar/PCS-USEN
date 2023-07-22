@@ -116,6 +116,13 @@ const Hero = () => {
         });
       }, []);
 
+      const sm  =require("../Assets/21.jpg")
+      const sm1 = require("../Assets/22.jpg")
+      const s30  =require("../Assets/30.jpg")
+      const s40 = require("../Assets/40.jpg")
+      const s50  =require("../Assets/50.jpg")
+      const s60 = require("../Assets/60.jpg")
+
   return (
     <header>
     <div>
@@ -141,7 +148,7 @@ const Hero = () => {
     />
         </div>
 
-    <div className='hidden md:flex'>
+    <div className='hidden lg:flex'>
 
     <div
       // style={{width: '100%'}}
@@ -169,7 +176,7 @@ const Hero = () => {
           - *HERO
         */}
               <div className="section hero" id="home" aria-label="hero">
-                <div className="container md:mt-0 mt-48">
+                <div className="container lg:mt-0 mt-[45%]">
                   <div className="hero-content">
                     <p className="hero-subtitle has-before">Wellcome to Our Agency</p>
                     <h1 className="h1 hero-title">Your Brand Is Our Priority</h1>
@@ -195,37 +202,37 @@ const Hero = () => {
 
               {/* Services */}
                  {/* my part */}
-                 <div className='xl:flex grid lg:grid-cols-2 justify-center relative gap-10 md:pt-40 pt-20, pb-20 bg-[#f5fffc] p-10'>
+                 <div className='xl:flex grid lg:grid-cols-2 justify-center relative gap-10 lg:pt-40 pt-20, pb-20 bg-[#f5fffc] p-10'>
                 <h1 className='w-[80%] absolute hidden xl:inline bg-[#28af60] h-3 top-[55%]'> </h1>
                 <Link to={'/services'} className='bg-white text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] h-96'>
                   <div>
-                    <img src={card} alt="" className='mt-5'/>
+                    <img src={s40} alt="" className='mt-0 rounded-xl'/>
                   </div>
-                  <div className='bg-[#28af60] absolute top-[75%] rounded-b-xl h-24 w-[100%]'>
+                  <div className='bg-[#28af60] absolute -bottom-20 lg:-bottom-10 xl:-bottom-20 rounded-b-xl h-24 w-[100%]'>
                   <h2 className='font-bold text-center mt-7 text-white text-3xl'>Website Design</h2>
                   </div>
                 </Link>
-                <Link to={'/services'} className='bg-white md:mt-72 text-center relative shadow-2xl rounded-lg h-96 grid justify-center w-[380px]'>
+                <Link to={'/services'} className='bg-white lg:mt-72 mt-20 text-center relative shadow-2xl rounded-lg h-96 grid justify-center w-[380px]'>
                   <div>
-                    <img src={card1} alt="" className='mt-12'/>
+                    <img src={s60} alt="" className='mt-0 rounded-xl'/>
                   </div>
-                  <div className='bg-[#28af60] absolute top-[75%] rounded-b-xl h-24 w-[100%]'>
+                  <div className='bg-[#28af60] absolute -bottom-20 lg:-bottom-10 xl:-bottom-20 rounded-b-xl h-24 w-[100%]'>
                   <h2 className='font-bold  text-center mt-7 text-white text-3xl'>Mobile App</h2>
                   </div>
                 </Link>
                 <Link to={'/services'} className='bg-white text-center relative shadow-2xl lg:mt-0 mt-20 rounded-lg h-96 grid justify-center  w-[380px] '>
                   <div>
-                    <img src={card2} alt="" className='mt-12' />
+                    <img src={s30} alt="" className='mt-0 rounded-xl' />
                   </div>
-                  <div className='bg-[#28af60] absolute top-[75%] rounded-b-xl h-24 w-[100%]'>
-                  <h2 className='font-bold  text-center mt-7 text-white text-3xl'>Digital Marketing</h2>
+                  <div className='bg-[#28af60] absolute -bottom-20 lg:-bottom-10 xl:-bottom-20 rounded-b-xl h-24 w-[100%]'>
+                  <h2 className='font-bold  text-center mt-7 text-white text-3xl'>Video Editing</h2>
                   </div>
                 </Link>
-                <Link to={'/services'} className='bg-white md:mt-72 h-96 text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] '>
+                <Link to={'/services'} className='bg-white lg:mt-72 mt-20 h-96 text-center relative shadow-2xl rounded-lg grid justify-center w-[380px] '>
                   <div>
-                    <img src={card3} alt="" className='mt-12'/>
+                    <img src={sm1} alt="" className='mt-0 rounded-xl'/>
                   </div>
-                  <div className='bg-[#28af60] absolute top-[75%] rounded-b-xl h-24 w-[100%]'>
+                  <div className='bg-[#28af60] absolute -bottom-20 lg:-bottom-10 xl:-bottom-20 rounded-b-xl h-24 w-[100%]'>
                   <h2 className='font-bold  text-center mt-7 text-white text-3xl'>SEO and SMO</h2>
                   </div>
                 </Link>

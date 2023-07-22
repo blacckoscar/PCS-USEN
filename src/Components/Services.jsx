@@ -20,7 +20,7 @@ const Services = () => {
   return (
 
 <div>
-    <div className='mt-40 text-center bg-[#f5fffc] w-screen'
+    <div className='mt-56 text-center bg-[#f5fffc] w-screen'
         style={{backgroundImage: `url(${Son})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
 
     >
@@ -33,13 +33,13 @@ const Services = () => {
                 <div onClick={() => handleIsShow(index)} className='xl:flex grid w-[350px] lg:grid-cols-2 justify-center relative gap-10 pt-20 pb-20 p-10' key={index} >
                 <Link to={''} className='bg-white text-center relative shadow-2xl rounded-xl justify-center w-[380px] h-96'>
                   <Link className='grid justify-center' onClick={() => handleIsShow(index)}>
-                    <img src={asu.Image} alt="" className='mt-5'/>
+                    <img src={asu.Image} alt="" className='mt-0 rounded-xl'/>
                   </Link>
-                  <div onClick={() => handleIsShow(index)}  className='bg-[#28af60] absolute flex top-[75%] justify-center rounded-b-xl h-24 w-[100%]'>
+                  <div onClick={() => handleIsShow(index)}  className='bg-[#28af60] absolute flex -bottom-20 lg:-bottom-0 justify-center rounded-b-xl h-24 w-[100%]'>
                   <h2 className='font-bold text-center mt-7 text-white text-3xl'>{asu.title}</h2> 
                   </div>
                   {activeIndex === index && (
-                  <div onClick={() => handleIsShow(index)} className='absolute bg-white rounded-lg text-start p-5 text-lg font-bold'>
+                  <div onClick={() => handleIsShow(index)} className='absolute bg-white z-50 rounded-lg text-start p-5 text-lg font-bold'>
         
                     {asu.content}
                   </div>
@@ -57,13 +57,13 @@ const Services = () => {
                 <div onClick={() => handleIsShow(index)} className='xl:flex grid w-[350px] lg:grid-cols-2 justify-center relative gap-10 pt-20 pb-20 p-10' key={index} >
                 <Link to={''} className='bg-white text-center relative shadow-2xl rounded-xl justify-center w-[380px] h-96'>
                   <Link className='grid justify-center' onClick={() => handleIsShows(index)} >
-                    <img src={asu.Image} alt="" className='mt-5'/>
+                    <img src={asu.Image} alt="" className='mt-0 rounded-xl'/>
                   </Link>
-                  <div onClick={() => handleIsShows(index)}  className='bg-[#28af60] absolute flex top-[75%] justify-center rounded-b-xl h-24 w-[100%]'>
+                  <div onClick={() => handleIsShows(index)}  className='bg-[#28af60] absolute flex -bottom-20 lg:-bottom-0 justify-center rounded-b-xl h-24 w-[100%]'>
                   <h2 className='font-bold text-center mt-7 text-white text-3xl'>{asu.title}</h2> 
                   </div>
                   {isActiveIndex === index && (
-                  <div onClick={() => handleIsShows(index)} className='absolute bg-white rounded-lg text-start p-5 text-lg font-bold'>
+                  <div onClick={() => handleIsShows(index)} className='absolute z-50 bg-white rounded-lg text-start p-5 text-lg font-bold'>
                     {asu.content}
                   </div>
                   )}
