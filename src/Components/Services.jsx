@@ -39,7 +39,7 @@ const Services = () => {
                   <h2 className='font-bold text-center mt-7 text-white text-3xl'>{asu.title}</h2> 
                   </div>
                   {activeIndex === index && (
-                  <div onClick={() => handleIsShow(index)} className='absolute bg-white z-50 rounded-lg text-start p-5 text-lg font-bold'>
+                  <div onClick={() => handleIsShow(index)} className='absolute bg-white z-50 rounded-lg text-start p-5 mt-10 text-lg font-bold'>
         
                     {asu.content}
                   </div>
@@ -63,7 +63,7 @@ const Services = () => {
                   <h2 className='font-bold text-center mt-7 text-white text-3xl'>{asu.title}</h2> 
                   </div>
                   {isActiveIndex === index && (
-                  <div onClick={() => handleIsShows(index)} className='absolute z-50 bg-white rounded-lg text-start p-5 text-lg font-bold'>
+                  <div onClick={() => handleIsShows(index)} className='absolute z-50 bg-white rounded-lg text-start p-5 mt-10 text-lg font-bold'>
                     {asu.content}
                   </div>
                   )}
